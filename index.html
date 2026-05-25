@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>LearnImpact Survey Hub 2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#F4F4F4;color:#354062;min-height:100vh;overflow-x:hidden}
+.hdr{background:#354062;color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.hdr-t{font-size:15px;font-weight:700;line-height:1.3}
+.hdr-s{font-size:10px;opacity:.65;margin-top:1px}
+.badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;white-space:nowrap;flex-shrink:0}
+.demo-bg{background:#FFC650;color:#354062}
+.live-bg{background:#5EA6B8;color:#fff}
+.tabs{background:#2a3350;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;position:sticky;top:0;z-index:98}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:11px 14px;font-size:12px;font-weight:600;color:rgba(255,255,255,.5);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:color .15s,border-color .15s;-webkit-tap-highlight-color:transparent}
+.tab.on{color:#FFC650;border-bottom-color:#FFC650}
+.panel{display:none;padding:12px;max-width:900px;margin:0 auto}
+.panel.on{display:block}
+.demo-bar{background:#FFF3CD;border-left:4px solid #FFC650;padding:8px 12px;font-size:11px;color:#856404;margin-bottom:12px;border-radius:0 6px 6px 0;display:none}
+.kg{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}
+@media(min-width:540px){.kg{grid-template-columns:repeat(4,1fr)}}
+.kc{background:#fff;border-radius:10px;padding:13px 11px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.kl{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#999}
+.kv{font-size:26px;font-weight:800;color:#354062;line-height:1;margin:3px 0 2px}
+.ks{font-size:10px;color:#bbb}
+.card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:12px}
+.ct{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#354062;margin-bottom:12px}
+.pr{margin-bottom:9px}
+.ph{display:flex;justify-content:space-between;font-size:11px;margin-bottom:3px;color:#444}
+.pt{background:#eee;border-radius:4px;height:9px;overflow:hidden}
+.pf{height:9px;border-radius:4px;transition:width .5s ease}
+.cw{position:relative;height:200px}
+.cws{position:relative;height:160px}
+.cwl{position:relative;height:240px}
+.tbl{width:100%;border-collapse:collapse;font-size:11px}
+.tbl th{background:#354062;color:#fff;padding:8px 9px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.3px}
+.tbl td{padding:7px 9px;border-bottom:1px solid #f0f0f0;vertical-align:middle}
+.tbl tr:last-child td{border-bottom:none}
+.chip{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff}
+select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-size:13px;color:#354062;background:#fff;margin-bottom:12px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.spk{display:inline-block;height:8px;border-radius:2px;min-width:2px;vertical-align:middle}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.two{grid-template-columns:1fr}}
+.tag{display:inline-block;background:#e8edf5;color:#354062;font-size:10px;padding:2px 7px;border-radius:8px;margin:2px}
+.fbi{border-bottom:1px solid #f0f0f0;padding:10px 0}
+.fbi:last-child{border:none}
+.fbm{font-size:10px;color:#999;margin-bottom:4px}
+.fbt{font-size:12px;line-height:1.5;color:#333}
+.foot{font-size:10px;color:#ccc;text-align:center;padding:8px 0 20px}
+.ring-wrap{position:relative;width:120px;height:120px;flex-shrink:0}
+.ring-mid{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div>
+    <div class="hdr-t">LearnImpact Survey Hub</div>
+    <div class="hdr-s">KiuFunza Stakeholder Survey · June–July 2026</div>
+  </div>
+  <span id="badge" class="badge demo-bg">DEMO</span>
+</div>
+
+<div class="tabs" id="tabbar">
+  <div class="tab on"  onclick="sw(0)">🏠 Overview</div>
+  <div class="tab"     onclick="sw(1)">📋 Collection</div>
+  <div class="tab"     onclick="sw(2)">🗺️ Regional</div>
+  <div class="tab"     onclick="sw(3)">👤 Enumerators</div>
+  <div class="tab"     onclick="sw(4)">📊 Results</div>
+  <div class="tab"     onclick="sw(5)">💬 Feedback</div>
+</div>
+
+<!-- ── TAB 0: OVERVIEW ─────────────────────────────────────── -->
+<div id="p0" class="panel on">
+  <div id="db0" class="demo-bar">⚠️ Demo data shown · Real responses will appear automatically once the form is live on KoboToolbox.</div>
+  <div class="kg">
+    <div class="kc"><div class="kl">Total Responses</div><div class="kv" id="ov-n">—</div><div class="ks">Target 3,122</div></div>
+    <div class="kc"><div class="kl">% Complete</div><div class="kv" id="ov-p">—</div><div class="ks">overall target</div></div>
+    <div class="kc"><div class="kl">Regions Active</div><div class="kv" id="ov-r">—</div><div class="ks">of 11 regions</div></div>
+    <div class="kc"><div class="kl">Today</div><div class="kv" id="ov-t">—</div><div class="ks">submissions</div></div>
+  </div>
+  <div class="card">
+    <div class="ct">Progress by Respondent Type</div>
+    <div style="display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap">
+      <div class="ring-wrap">
+        <canvas id="ov-ring"></canvas>
+        <div class="ring-mid">
+          <div style="font-size:20px;font-weight:800;color:#354062" id="ov-rp">0%</div>
+          <div style="font-size:9px;color:#999">DONE</div>
+        </div>
+      </div>
+      <div style="flex:1;min-width:180px" id="ov-bars"></div>
+    </div>
+  </div>
+  <div class="card"><div class="ct">Daily Submissions — Last 14 Days</div><div class="cws"><canvas id="ov-daily"></canvas></div></div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min · LearnImpact 2026</div>
+</div>
+
+<!-- ── TAB 1: COLLECTION ───────────────────────────────────── -->
+<div id="p1" class="panel">
+  <div id="db1" class="demo-bar">⚠️ Demo data shown · Real responses load automatically.</div>
+  <div class="card"><div class="ct">Collection Progress by Respondent Type</div><div id="col-bars"></div></div>
+  <div class="card"><div class="ct">Responses by Region</div><div class="cw"><canvas id="col-reg"></canvas></div></div>
+  <div class="card">
+    <div class="ct">Status Summary</div>
+    <table class="tbl"><thead><tr><th>Group</th><th>Collected</th><th>Target</th><th>%</th><th>Status</th></tr></thead><tbody id="col-tbl"></tbody></table>
+  </div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
+</div>
+
+<!-- ── TAB 2: REGIONAL ─────────────────────────────────────── -->
+<div id="p2" class="panel">
+  <div id="db2" class="demo-bar">⚠️ Demo data shown · Real responses load automatically.</div>
+  <div class="card" style="padding:12px">
+    <label style="font-size:10px;font-weight:700;text-transform:uppercase;color:#999;display:block;margin-bottom:5px">Select Region</label>
+    <select id="reg-sel"></select>
+  </div>
+  <div class="kg">
+    <div class="kc"><div class="kl">Responses</div><div class="kv" id="reg-n">—</div><div class="ks" id="reg-tl">of target</div></div>
+    <div class="kc"><div class="kl">% Complete</div><div class="kv" id="reg-p">—</div><div class="ks">region target</div></div>
+    <div class="kc"><div class="kl">LGAs Covered</div><div class="kv" id="reg-l">—</div><div class="ks" id="reg-ll">of LGAs</div></div>
+    <div class="kc"><div class="kl">Today</div><div class="kv" id="reg-t">—</div><div class="ks">submissions</div></div>
+  </div>
+  <div class="card"><div class="ct">Progress by Type</div><div id="reg-bars"></div></div>
+  <div class="card"><div class="ct">LGA Breakdown</div><div class="cws"><canvas id="reg-lga"></canvas></div></div>
+  <div class="card"><div class="ct">Daily Trend</div><div class="cws"><canvas id="reg-daily"></canvas></div></div>
+  <div class="card">
+    <div class="ct">Recent Submissions</div>
+    <table class="tbl"><thead><tr><th>Time</th><th>Type</th><th>LGA</th><th>Enumerator</th></tr></thead><tbody id="reg-rec"></tbody></table>
+  </div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
+</div>
+
+<!-- ── TAB 3: ENUMERATORS ──────────────────────────────────── -->
+<div id="p3" class="panel">
+  <div id="db3" class="demo-bar">⚠️ Demo data shown · Real responses load automatically.</div>
+  <div class="kg">
+    <div class="kc"><div class="kl">Active Enumerators</div><div class="kv" id="en-a">—</div><div class="ks">submitted ≥1</div></div>
+    <div class="kc"><div class="kl">Today</div><div class="kv" id="en-t">—</div><div class="ks">submissions</div></div>
+    <div class="kc"><div class="kl">Avg per Person</div><div class="kv" id="en-av">—</div><div class="ks">total</div></div>
+    <div class="kc"><div class="kl">Inactive 3+ days</div><div class="kv" id="en-i" style="color:#BE6243">—</div><div class="ks">need follow-up</div></div>
+  </div>
+  <div class="card"><div class="ct">Daily Submissions — Last 14 Days</div><div class="cws"><canvas id="en-daily"></canvas></div></div>
+  <div class="card">
+    <div class="ct">🏆 Leaderboard</div>
+    <table class="tbl"><thead><tr><th>#</th><th>Name</th><th>Total</th><th>Today</th><th>7d</th><th>Status</th></tr></thead><tbody id="en-tbl"></tbody></table>
+  </div>
+  <div id="en-icard" class="card" style="display:none">
+    <div class="ct" style="color:#BE6243">⚠️ Follow-up Needed (no submissions 3+ days)</div>
+    <table class="tbl"><thead><tr><th>Name</th><th>Last Submission</th><th>Total</th></tr></thead><tbody id="en-itbl"></tbody></table>
+  </div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
+</div>
+
+<!-- ── TAB 4: RESULTS ──────────────────────────────────────── -->
+<div id="p4" class="panel">
+  <div id="db4" class="demo-bar">⚠️ Demo data shown · Real responses load automatically.</div>
+  <div class="kg" style="grid-template-columns:repeat(2,1fr)">
+    <div class="kc"><div class="kl">Teacher Responses</div><div class="kv" id="rs-n">—</div><div class="ks">with quality data</div></div>
+    <div class="kc"><div class="kl">Avg Quality Score</div><div class="kv" id="rs-q">—</div><div class="ks">out of 5.0</div></div>
+  </div>
+  <div class="card"><div class="ct">Program Quality Ratings (Teachers)</div><div class="cwl"><canvas id="rs-qual"></canvas></div></div>
+  <div class="two">
+    <div class="card"><div class="ct">Scale Readiness (Officials)</div><div class="cws"><canvas id="rs-rdy"></canvas></div></div>
+    <div class="card"><div class="ct">Govt Integration (Officials)</div><div class="cws"><canvas id="rs-int"></canvas></div></div>
+  </div>
+  <div class="card"><div class="ct">Strategic Priorities — All Respondents</div><div class="cw"><canvas id="rs-pri"></canvas></div></div>
+  <div class="card"><div class="ct">Partner Satisfaction</div><div id="rs-pbar"></div></div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
+</div>
+
+<!-- ── TAB 5: FEEDBACK ─────────────────────────────────────── -->
+<div id="p5" class="panel">
+  <div id="db5" class="demo-bar">⚠️ Demo data shown · Real responses load automatically.</div>
+  <div class="kg" style="grid-template-columns:repeat(2,1fr)">
+    <div class="kc"><div class="kl">Open Responses</div><div class="kv" id="fb-n">—</div><div class="ks">with feedback text</div></div>
+    <div class="kc"><div class="kl">Filter by Type</div>
+      <select id="fb-sel" style="margin-top:4px;font-size:11px;padding:4px 8px;width:100%"><option value="">All Types</option></select>
+    </div>
+  </div>
+  <div class="card"><div class="ct">Common Themes</div><div id="fb-themes" style="padding:2px 0"></div></div>
+  <div class="card"><div class="ct">Recent Feedback</div><div id="fb-list"></div></div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
+</div>
+
+<script>
+// ── CONFIG ────────────────────────────────────────────────────
+const CFG={server:'https://kf.kobotoolbox.org',asset:'a9PoUCJY6iP9EfXwV8WSxx',token:'c1bdf4caa31fb403692651a07b6e0b40c7d6b351',limit:10000,refresh_ms:300000};
+const REGIONS=['Dodoma','Kigoma','Lindi','Manyara','Mara','Mtwara','Rukwa','Shinyanga','Singida','Songwe','Tanga'];
+const RLGAS={Dodoma:['Dodoma Mjini'],Kigoma:['Kasulu','Kibondo','Uvinza'],Lindi:['Lindi Mjini','Mtama','Ruangwa'],Manyara:['Kiteto','Mbulu','Simanjiro'],Mara:['Bunda Mji','Butiama','Tarime Vijijini'],Mtwara:['Masasi','Nanyumbu','Newala Mji'],Rukwa:['Kalambo','Sumbawanga Mjini','Sumbawanga Vijijini'],Shinyanga:['Msalala','Shinyanga Vijijini','Ushetu'],Singida:['Iramba','Manyoni','Mkalama'],Songwe:['Ileje','Momba','Songwe'],Tanga:['Kilindi','Lushoto','Pangani']};
+const TGT={head_teacher:700,teacher_kf_lower:1400,teacher_kf_upper:700,teacher_non_kf:55,weo:110,deo:33,other_official:30,rc:22,arc:22,volunteer:50};
+const TTGT=3122;
+const RTL={head_teacher:'Head Teachers',teacher_kf_lower:'KF Teachers (Gr 1-3)',teacher_kf_upper:'KF Teachers (Gr 4-7)',teacher_non_kf:'Non-KF Teachers',weo:'Ward Ed. Officers',deo:'DEOs / DAOs',other_official:'Other Officials',rc:'Regional Coords.',arc:'Asst. Regional Coords.',volunteer:'Volunteers'};
+const C={i:'#354062',s:'#FFC650',k:'#5EA6B8',c:'#BE6243',o:'#F4F4F4'};
+const ENAMES=['Juma Mwalimu','Amina Hassan','Peter John','Grace Banda','David Martin','Fatuma Ali','Michael James','Rose Thomas','Ibrahim Said','Sarah Nyambo','Baraka Omari','Zuwena Salim','Haruna Moshi','Consolata Festo','Patrick Ngowi'];
+const DFB=['KiuFunza imesaidia sana walimu wetu kuboresha ufundishaji wa kusoma na kuandika.','Programu nzuri sana — watoto wanaendelea vizuri zaidi kuliko hapo awali.','Tungependa mafunzo zaidi kwa walimu wa darasa la 4-7.','Ushirikiano na serikali unahitaji kuimarishwa kwa ajili ya uendelevu.','Matokeo ya wanafunzi yameongezeka kwa kiasi kikubwa tangu 2023.','The coaching support from RCs has been excellent this phase.','We need more materials in Kiswahili for lower grades.','Teachers are more confident in structured pedagogy now.','Government buy-in at district level has improved significantly.','Would like to see the programme expanded to more wards.','Rasilimali zinahitajika zaidi kwa shule zenye wanafunzi wengi.','Mfumo wa ufuatiliaji unahitaji kuboreshwa kwa ngazi ya shule.'];
+
+function sc(p){return p>=100?C.i:p>=80?C.k:p>=50?C.s:C.c}
+function sl(p){return p>=100?'✓ Done':p>=80?'On Track':p>=50?'Needs Push':'Behind'}
+function fdt(iso){if(!iso)return'';const d=new Date(iso);return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}
+function dly(data,days){const now=new Date(),o={};for(let i=days-1;i>=0;i--){const d=new Date(now-i*86400000);o[d.toISOString().slice(0,10)]=0}data.forEach(r=>{const k=(r._submission_time||'').slice(0,10);if(k in o)o[k]++});return o}
+function avf(arr,f){const v=arr.map(d=>parseFloat(d[f])).filter(n=>!isNaN(n));return v.length?v.reduce((a,b)=>a+b,0)/v.length:0}
+function lkd(arr,f){const d={1:0,2:0,3:0,4:0,5:0};arr.forEach(r=>{const v=parseInt(r[f]);if(v>=1&&v<=5)d[v]++});return[1,2,3,4,5].map(k=>d[k])}
+function mc(arr,f,opts){return opts.map(o=>arr.filter(r=>(r[f]||'').split(' ').includes(o)).length)}
+
+// ── DEMO DATA ─────────────────────────────────────────────────
+let AD=[],DEMO=false;
+function mkDemo(){
+  const rows=[],types=Object.keys(TGT),now=new Date();
+  const pris=['kiufunza_sustain','soma_expand','ai_integration','evidence_publishing','govt_partnerships'];
+  types.forEach(t=>{
+    const n=Math.round(TGT[t]*0.41+Math.random()*TGT[t]*0.08);
+    for(let i=0;i<n;i++){
+      const rg=REGIONS[Math.floor(Math.random()*REGIONS.length)];
+      const ll=RLGAS[rg],lg=ll[Math.floor(Math.random()*ll.length)];
+      const da=Math.random()<0.65?Math.floor(Math.random()*7):Math.floor(Math.random()*21);
+      const dt=new Date(now-da*86400000-Math.random()*28800000);
+      const ei=Math.floor(Math.random()*ENAMES.length);
+      const isTch=['head_teacher','teacher_kf_lower','teacher_kf_upper','teacher_non_kf'].includes(t);
+      const isOff=['weo','deo','other_official'].includes(t);
+      const isPrt=['rc','arc','volunteer'].includes(t);
+      const np=1+Math.floor(Math.random()*3);
+      const pr=[...pris].sort(()=>Math.random()-.5).slice(0,np).join(' ');
+      rows.push({respondent_type:t,region:rg,lga:lg,_submission_time:dt.toISOString(),_submitted_by:ENAMES[ei].toLowerCase().replace(' ','.'),enumerator_name:ENAMES[ei],
+        a1_teaching_quality:isTch?String(2+Math.floor(Math.random()*3.5)):'',
+        a2_materials:isTch?String(2+Math.floor(Math.random()*3.5)):'',
+        a3_coach_support:isTch?String(2+Math.floor(Math.random()*3.5)):'',
+        a4_learning_gains:isTch?String(2+Math.floor(Math.random()*3.2)):'',
+        a6_overall_kf:isTch?String(2+Math.floor(Math.random()*3.5)):'',
+        b4_scale_ready:isOff?String(2+Math.floor(Math.random()*3.5)):'',
+        b5_govt_integrate:isOff?String(2+Math.floor(Math.random()*3.5)):'',
+        d5_priority:pr,
+        e1_rc_comm:isPrt?String(2+Math.floor(Math.random()*3.5)):'',
+        e2_rc_support:isPrt?String(2+Math.floor(Math.random()*3.5)):'',
+        e6_overall:isPrt?String(2+Math.floor(Math.random()*3.5)):'',
+        f1_feedback:Math.random()<0.2?DFB[Math.floor(Math.random()*DFB.length)]:'',
+        f2_suggestions:Math.random()<0.1?DFB[Math.floor(Math.random()*DFB.length)]:''
+      });
+    }
+  });
+  return rows;
+}
+
+async function loadData(){
+  try{
+    const url=`${CFG.server}/api/v2/assets/${CFG.asset}/data/?format=json&limit=${CFG.limit}`;
+    const res=await fetch(url,{headers:{'Authorization':`Token ${CFG.token}`,'Accept':'application/json'}});
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    const j=await res.json();const r=j.results||j;
+    AD=Array.isArray(r)?r:[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
+  }catch(e){DEMO=true;AD=mkDemo();}
+  document.getElementById('badge').textContent=DEMO?'DEMO':'LIVE';
+  document.getElementById('badge').className='badge '+(DEMO?'demo-bg':'live-bg');
+  ['db0','db1','db2','db3','db4','db5'].forEach(id=>{document.getElementById(id).style.display=DEMO?'block':'none';});
+  renderAll();
+  setTimeout(loadData,CFG.refresh_ms);
+}
+
+// ── CHARTS ────────────────────────────────────────────────────
+const CH={};
+function mk(id,cfg){if(CH[id])CH[id].destroy();CH[id]=new Chart(document.getElementById(id).getContext('2d'),cfg)}
+const DO={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},animation:{duration:350}};
+const DS=(ex={})=>({...DO,...ex});
+
+// ── RENDER TAB 0 ──────────────────────────────────────────────
+function r0(){
+  const n=AD.length,p=Math.round(n/TTGT*100),td=new Date().toISOString().slice(0,10);
+  const tn=AD.filter(d=>d._submission_time&&d._submission_time.slice(0,10)===td).length;
+  const rg=new Set(AD.map(d=>d.region)).size;
+  document.getElementById('ov-n').textContent=n.toLocaleString();
+  document.getElementById('ov-p').textContent=p+'%';
+  document.getElementById('ov-r').textContent=rg;
+  document.getElementById('ov-t').textContent=tn;
+  document.getElementById('ov-rp').textContent=p+'%';
+  mk('ov-ring',{type:'doughnut',data:{datasets:[{data:[Math.min(n,TTGT),Math.max(0,TTGT-n)],backgroundColor:[sc(p),'#eee'],borderWidth:0,cutout:'72%'}]},options:{...DS(),animation:{duration:500}}});
+  document.getElementById('ov-bars').innerHTML=Object.entries(TGT).map(([t,tg])=>{const c=AD.filter(d=>d.respondent_type===t).length,pp=Math.min(100,Math.round(c/tg*100)),cl=sc(pp);return`<div class="pr"><div class="ph"><span>${RTL[t]}</span><span style="color:${cl};font-weight:700">${c}/${tg}</span></div><div class="pt"><div class="pf" style="width:${pp}%;background:${cl}"></div></div></div>`;}).join('');
+  const dy=dly(AD,14);
+  mk('ov-daily',{type:'line',data:{labels:Object.keys(dy).map(k=>k.slice(5)),datasets:[{data:Object.values(dy),borderColor:C.k,backgroundColor:C.k+'33',tension:.35,fill:true,pointRadius:3,borderWidth:2}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+}
+
+// ── RENDER TAB 1 ──────────────────────────────────────────────
+function r1(){
+  document.getElementById('col-bars').innerHTML=Object.entries(TGT).map(([t,tg])=>{const c=AD.filter(d=>d.respondent_type===t).length,p=Math.min(100,Math.round(c/tg*100)),cl=sc(p);return`<div class="pr"><div class="ph"><span>${RTL[t]}</span><span style="color:${cl};font-weight:700">${c} / ${tg} &nbsp;(${p}%)</span></div><div class="pt"><div class="pf" style="width:${p}%;background:${cl}"></div></div></div>`;}).join('');
+  const rc=REGIONS.map(r=>AD.filter(d=>d.region===r).length);
+  mk('col-reg',{type:'bar',data:{labels:REGIONS,datasets:[{data:rc,backgroundColor:rc.map(c=>c>50?C.k:c>20?C.s:C.c),borderRadius:3}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+  document.getElementById('col-tbl').innerHTML=Object.entries(TGT).map(([t,tg])=>{const c=AD.filter(d=>d.respondent_type===t).length,p=Math.round(c/tg*100),cl=sc(p);return`<tr><td>${RTL[t]}</td><td>${c}</td><td>${tg}</td><td style="font-weight:700;color:${cl}">${p}%</td><td><span class="chip" style="background:${cl}">${sl(p)}</span></td></tr>`;}).join('');
+}
+
+// ── RENDER TAB 2 ──────────────────────────────────────────────
+function r2(){
+  const sel=document.getElementById('reg-sel');
+  if(!sel.options.length){
+    const o0=document.createElement('option');o0.value='';o0.textContent='— All Regions —';sel.appendChild(o0);
+    REGIONS.forEach(r=>{const o=document.createElement('option');o.value=r;o.textContent=r;sel.appendChild(o);});
+    sel.onchange=r2;
+  }
+  const rv=sel.value;
+  const data=rv?AD.filter(d=>d.region===rv):AD;
+  const tg=rv?{head_teacher:Math.round(700/11),teacher_kf_lower:Math.round(1400/11),teacher_kf_upper:Math.round(700/11),teacher_non_kf:5,weo:10,deo:3,other_official:3,rc:2,arc:2,volunteer:Math.round(50/11)}:TGT;
+  const ttg=Object.values(tg).reduce((a,b)=>a+b,0);
+  const n=data.length,p=Math.round(n/ttg*100),td=new Date().toISOString().slice(0,10);
+  const tn=data.filter(d=>d._submission_time&&d._submission_time.slice(0,10)===td).length;
+  const ls=new Set(data.map(d=>d.lga).filter(Boolean));
+  const tl=rv?(RLGAS[rv]||[]).length:33;
+  document.getElementById('reg-n').textContent=n;document.getElementById('reg-tl').textContent='of ~'+ttg;
+  document.getElementById('reg-p').textContent=p+'%';document.getElementById('reg-l').textContent=ls.size;
+  document.getElementById('reg-ll').textContent='of '+tl+' LGAs';document.getElementById('reg-t').textContent=tn;
+  document.getElementById('reg-bars').innerHTML=Object.entries(tg).map(([t,tgv])=>{const c=data.filter(d=>d.respondent_type===t).length,pp=Math.min(100,Math.round(c/Math.max(1,tgv)*100)),cl=sc(pp);return`<div class="pr"><div class="ph"><span>${RTL[t]}</span><span style="color:${cl};font-weight:700">${c}/${tgv}</span></div><div class="pt"><div class="pf" style="width:${pp}%;background:${cl}"></div></div></div>`;}).join('');
+  const lgList=rv?(RLGAS[rv]||[]):[...ls].slice(0,12);
+  const lgCnt=lgList.map(l=>data.filter(d=>d.lga===l).length);
+  mk('reg-lga',{type:'bar',data:{labels:lgList,datasets:[{data:lgCnt,backgroundColor:C.k,borderRadius:3}]},options:{...DS(),indexAxis:'y',scales:{x:{beginAtZero:true,ticks:{font:{size:9}}},y:{ticks:{font:{size:9}}}}}});
+  const dy=dly(data,14);
+  mk('reg-daily',{type:'line',data:{labels:Object.keys(dy).map(k=>k.slice(5)),datasets:[{data:Object.values(dy),borderColor:C.s,backgroundColor:C.s+'33',tension:.35,fill:true,pointRadius:3,borderWidth:2}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+  const rec=[...data].sort((a,b)=>new Date(b._submission_time)-new Date(a._submission_time)).slice(0,8);
+  document.getElementById('reg-rec').innerHTML=rec.map(r=>`<tr><td style="white-space:nowrap;font-size:10px">${fdt(r._submission_time)}</td><td>${RTL[r.respondent_type]||r.respondent_type}</td><td>${r.lga||'—'}</td><td>${r.enumerator_name||r._submitted_by||'—'}</td></tr>`).join('');
+}
+
+// ── RENDER TAB 3 ──────────────────────────────────────────────
+function r3(){
+  const td=new Date().toISOString().slice(0,10),c3=new Date(Date.now()-3*86400000).toISOString().slice(0,10),c7=new Date(Date.now()-7*86400000).toISOString().slice(0,10);
+  const em={};
+  AD.forEach(d=>{const k=d.enumerator_name||d._submitted_by||'Unknown';if(!em[k])em[k]={name:k,all:[],today:0,week:0,last:''};em[k].all.push(d);const dt=(d._submission_time||'').slice(0,10);if(dt===td)em[k].today++;if(dt>=c7)em[k].week++;if(!em[k].last||dt>em[k].last)em[k].last=dt;});
+  const es=Object.values(em).sort((a,b)=>b.all.length-a.all.length);
+  const act=es.filter(e=>e.all.length>0).length;
+  const tn=AD.filter(d=>d._submission_time&&d._submission_time.slice(0,10)===td).length;
+  const inact=es.filter(e=>e.last&&e.last<c3);
+  document.getElementById('en-a').textContent=act;document.getElementById('en-t').textContent=tn;
+  document.getElementById('en-av').textContent=act?Math.round(AD.length/act):0;document.getElementById('en-i').textContent=inact.length;
+  const dy=dly(AD,14);
+  mk('en-daily',{type:'bar',data:{labels:Object.keys(dy).map(k=>k.slice(5)),datasets:[{data:Object.values(dy),backgroundColor:C.i,borderRadius:3}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+  const mx=es[0]?.all.length||1;
+  document.getElementById('en-tbl').innerHTML=es.slice(0,20).map((e,i)=>{const cl=e.last<c3?C.c:e.today>0?C.k:C.s;const st=e.last<c3?'Inactive':e.today>0?'Active today':'Active';const w=Math.round(e.all.length/mx*70);return`<tr><td style="font-weight:700">${['🥇','🥈','🥉'][i]||i+1}</td><td style="font-weight:600">${e.name}</td><td>${e.all.length}&nbsp;<span class="spk" style="width:${w}px;background:${cl}"></span></td><td>${e.today?'+'+e.today:'—'}</td><td>${e.week}</td><td><span class="chip" style="background:${cl}">${st}</span></td></tr>`;}).join('');
+  if(inact.length){document.getElementById('en-icard').style.display='block';document.getElementById('en-itbl').innerHTML=inact.map(e=>`<tr><td style="font-weight:600">${e.name}</td><td style="color:${C.c}">${e.last}</td><td>${e.all.length}</td></tr>`).join('');}
+  else document.getElementById('en-icard').style.display='none';
+}
+
+// ── RENDER TAB 4 ──────────────────────────────────────────────
+function r4(){
+  const tc=AD.filter(d=>['head_teacher','teacher_kf_lower','teacher_kf_upper'].includes(d.respondent_type));
+  const of=AD.filter(d=>['weo','deo','other_official'].includes(d.respondent_type));
+  const pt=AD.filter(d=>['rc','arc','volunteer'].includes(d.respondent_type));
+  document.getElementById('rs-n').textContent=tc.length;
+  const aq=avf(tc,'a6_overall_kf');document.getElementById('rs-q').textContent=aq?aq.toFixed(1):'—';
+  mk('rs-qual',{type:'bar',data:{labels:['Teaching Quality','Materials','Coach Support','Learning Gains','Overall KF'],datasets:[{data:['a1_teaching_quality','a2_materials','a3_coach_support','a4_learning_gains','a6_overall_kf'].map(f=>avf(tc,f)),backgroundColor:[C.i,C.k,C.s,C.c,C.i],borderRadius:4}]},options:{...DS(),indexAxis:'y',scales:{x:{min:0,max:5,ticks:{font:{size:10}}},y:{ticks:{font:{size:10}}}},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+c.raw.toFixed(1)+'/5'}}}}});
+  const lkCols=[C.c,'#d4724e',C.s,C.k,C.i];
+  mk('rs-rdy',{type:'doughnut',data:{labels:['1','2','3','4','5'],datasets:[{data:lkd(of,'b4_scale_ready'),backgroundColor:lkCols,borderWidth:1}]},options:{...DS({plugins:{legend:{display:true,position:'bottom',labels:{font:{size:9},boxWidth:10}}}})}});
+  mk('rs-int',{type:'doughnut',data:{labels:['1','2','3','4','5'],datasets:[{data:lkd(of,'b5_govt_integrate'),backgroundColor:lkCols,borderWidth:1}]},options:{...DS({plugins:{legend:{display:true,position:'bottom',labels:{font:{size:9},boxWidth:10}}}})}});
+  const pOpts=['kiufunza_sustain','soma_expand','ai_integration','evidence_publishing','govt_partnerships'];
+  mk('rs-pri',{type:'bar',data:{labels:['Sustain KiuFunza','Expand SOMA','AI Integration','Evidence Publishing','Govt Partnerships'],datasets:[{data:mc(AD,'d5_priority',pOpts),backgroundColor:[C.i,C.k,C.s,C.c,'#6b7fc4'],borderRadius:4}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+  document.getElementById('rs-pbar').innerHTML=[['RC Communication','e1_rc_comm'],['RC Support','e2_rc_support'],['Overall Partner Satisfaction','e6_overall']].map(([l,f])=>{const v=avf(pt,f),p=Math.round(v/5*100),cl=sc(p);return`<div class="pr"><div class="ph"><span>${l}</span><span style="color:${cl};font-weight:700">${v?v.toFixed(1)+'/5':'—'}</span></div><div class="pt"><div class="pf" style="width:${p||0}%;background:${cl}"></div></div></div>`;}).join('');
+}
+
+// ── RENDER TAB 5 ──────────────────────────────────────────────
+function r5(){
+  const fbSel=document.getElementById('fb-sel');
+  if(fbSel.options.length<=1){Object.entries(RTL).forEach(([v,l])=>{const o=document.createElement('option');o.value=v;o.textContent=l;fbSel.appendChild(o);});fbSel.onchange=r5;}
+  const fv=fbSel.value;
+  const data=fv?AD.filter(d=>d.respondent_type===fv):AD;
+  const frows=data.filter(d=>d.f1_feedback||d.f2_suggestions);
+  document.getElementById('fb-n').textContent=frows.length;
+  const THM={quality:['ubora','quality','bora','vizuri'],scale:['scale','upanuzi','serikali','government'],materials:['vitabu','materials','rasilimali'],training:['mafunzo','training'],support:['support','msaada','coaching']};
+  const THLB={quality:'Program Quality',scale:'Scale & Govt',materials:'Materials',training:'Training',support:'Support & Coaching'};
+  document.getElementById('fb-themes').innerHTML=Object.entries(THM).map(([th,kws])=>{const n=frows.filter(r=>kws.some(k=>(r.f1_feedback+' '+r.f2_suggestions).toLowerCase().includes(k))).length;return n>0?`<span class="tag">💬 ${THLB[th]} <strong>(${n})</strong></span>`:''}).join(' ');
+  const rec=[...frows].sort((a,b)=>new Date(b._submission_time)-new Date(a._submission_time)).slice(0,15);
+  document.getElementById('fb-list').innerHTML=rec.map(r=>`<div class="fbi"><div class="fbm">${RTL[r.respondent_type]||r.respondent_type} · ${r.region||''} · ${fdt(r._submission_time)}</div><div class="fbt">${r.f1_feedback||r.f2_suggestions}</div></div>`).join('');
+}
+
+// ── RENDER ALL / TAB SWITCH ───────────────────────────────────
+const RFN=[r0,r1,r2,r3,r4,r5];
+let CUR=0;
+function renderAll(){RFN[CUR]();}
+function sw(i){
+  CUR=i;
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('on',j===i));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('on',j===i));
+  RFN[i]();
+}
+loadData();
+</script>
+</body>
+</html>
