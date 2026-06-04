@@ -257,9 +257,9 @@ function mkDemo(){
 
 async function loadData(){
   try{
-    const url=`${CFG.server}/api/v2/assets/${CFG.asset}/data/?format=json&limit=${CFG.limit}`;
-    const res=await fetch(url,{headers:{'Authorization':`Token ${CFG.token}`,'Accept':'application/json'}});
-    if(!res.ok)throw new Error('HTTP '+res.status);
+    // Read from same-origin data.json (written by GitHub Actions every 30 min)
+    const res=await fetch('./data.json?_='+Date.now());
+    if(!res.ok)throw new Error('data.json missing: HTTP '+res.status);
     const j=await res.json();const r=j.results||j;
     AD=Array.isArray(r)?r:[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
   }catch(e){DEMO=true;AD=mkDemo();}
