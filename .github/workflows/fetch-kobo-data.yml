@@ -1,0 +1,32 @@
+name: Fetch KoboToolbox Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:           # allow manual trigger
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch data from KoboToolbox
+        run: |
+          curl -s \
+            -H "Authorization: Token c1bdf4caa31fb403692651a07b6e0b40c7d6b351" \
+            "https://kf.kobotoolbox.org/api/v2/assets/a9PoUCJY6iP9EfXwV8WSxx/data/?format=json&limit=10000" \
+            -o data.json
+          echo "Records fetched: $(python3 -c "import json; d=json.load(open('data.json')); print(d.get('count','error'))")"
+
+      - name: Commit if data changed
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add data.json
+          git diff --staged --quiet && echo "No changes to commit" || \
+            (git commit -m "data: refresh from KoboToolbox [skip pages]" && git push)
