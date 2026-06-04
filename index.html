@@ -88,9 +88,9 @@ select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-
 <div id="p0" class="panel on">
   <div id="db0" class="demo-bar">⚠️ Demo data shown · Real responses will appear automatically once the form is live on KoboToolbox.</div>
   <div class="kg">
-    <div class="kc"><div class="kl">Total Responses</div><div class="kv" id="ov-n">—</div><div class="ks">Target 3,122</div></div>
+    <div class="kc"><div class="kl">Total Responses</div><div class="kv" id="ov-n">—</div><div class="ks">Target 1,350</div></div>
     <div class="kc"><div class="kl">% Complete</div><div class="kv" id="ov-p">—</div><div class="ks">overall target</div></div>
-    <div class="kc"><div class="kl">Regions Active</div><div class="kv" id="ov-r">—</div><div class="ks">of 11 regions</div></div>
+    <div class="kc"><div class="kl">Regions Active</div><div class="kv" id="ov-r">—</div><div class="ks">of 10 regions</div></div>
     <div class="kc"><div class="kl">Today</div><div class="kv" id="ov-t">—</div><div class="ks">submissions</div></div>
   </div>
   <div class="card">
@@ -202,9 +202,9 @@ select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-
 const CFG={server:'https://kf.kobotoolbox.org',asset:'a9PoUCJY6iP9EfXwV8WSxx',token:'c1bdf4caa31fb403692651a07b6e0b40c7d6b351',limit:10000,refresh_ms:300000};
 const REGIONS=['Dodoma','Kigoma','Lindi','Manyara','Mara','Mtwara','Rukwa','Shinyanga','Singida','Songwe','Tanga'];
 const RLGAS={Dodoma:['Dodoma Mjini'],Kigoma:['Kasulu','Kibondo','Uvinza'],Lindi:['Lindi Mjini','Mtama','Ruangwa'],Manyara:['Kiteto','Mbulu','Simanjiro'],Mara:['Bunda Mji','Butiama','Tarime Vijijini'],Mtwara:['Masasi','Nanyumbu','Newala Mji'],Rukwa:['Kalambo','Sumbawanga Mjini','Sumbawanga Vijijini'],Shinyanga:['Msalala','Shinyanga Vijijini','Ushetu'],Singida:['Iramba','Manyoni','Mkalama'],Songwe:['Ileje','Momba','Songwe'],Tanga:['Kilindi','Lushoto','Pangani']};
-const TGT={head_teacher:700,teacher_kf_lower:1400,teacher_kf_upper:700,teacher_non_kf:55,weo:110,deo:33,other_official:30,rc:22,arc:22,volunteer:50};
-const TTGT=3122;
-const RTL={head_teacher:'Head Teachers',teacher_kf_lower:'KF Teachers (Gr 1-3)',teacher_kf_upper:'KF Teachers (Gr 4-7)',teacher_non_kf:'Non-KF Teachers',weo:'Ward Ed. Officers',deo:'DEOs / DAOs',other_official:'Other Officials',rc:'Regional Coords.',arc:'Asst. Regional Coords.',volunteer:'Volunteers'};
+const TGT={head_teacher:260,teacher_kf:520,teacher_non_kf:260,weo:150,district_official:60,regional_officer:20,rc:20,arc:20,volunteer:40};
+const TTGT=1350;
+const RTL={head_teacher:'Head Teachers',teacher_kf:'KF Teachers (2 per school)',teacher_non_kf:'Non-KF Teachers (Gr 4-6)',weo:'Ward Ed. Officers (5 per LGA)',district_official:'District Officials (DEO/DAO/DED)',regional_officer:'Regional Officers',rc:'Regional Coordinators',arc:'Asst. Regional Coordinators',volunteer:'Volunteers'};
 const C={i:'#354062',s:'#FFC650',k:'#5EA6B8',c:'#BE6243',o:'#F4F4F4'};
 const ENAMES=['Juma Mwalimu','Amina Hassan','Peter John','Grace Banda','David Martin','Fatuma Ali','Michael James','Rose Thomas','Ibrahim Said','Sarah Nyambo','Baraka Omari','Zuwena Salim','Haruna Moshi','Consolata Festo','Patrick Ngowi'];
 const DFB=['KiuFunza imesaidia sana walimu wetu kuboresha ufundishaji wa kusoma na kuandika.','Programu nzuri sana — watoto wanaendelea vizuri zaidi kuliko hapo awali.','Tungependa mafunzo zaidi kwa walimu wa darasa la 4-7.','Ushirikiano na serikali unahitaji kuimarishwa kwa ajili ya uendelevu.','Matokeo ya wanafunzi yameongezeka kwa kiasi kikubwa tangu 2023.','The coaching support from RCs has been excellent this phase.','We need more materials in Kiswahili for lower grades.','Teachers are more confident in structured pedagogy now.','Government buy-in at district level has improved significantly.','Would like to see the programme expanded to more wards.','Rasilimali zinahitajika zaidi kwa shule zenye wanafunzi wengi.','Mfumo wa ufuatiliaji unahitaji kuboreshwa kwa ngazi ya shule.'];
@@ -230,9 +230,9 @@ function mkDemo(){
       const da=Math.random()<0.65?Math.floor(Math.random()*7):Math.floor(Math.random()*21);
       const dt=new Date(now-da*86400000-Math.random()*28800000);
       const ei=Math.floor(Math.random()*ENAMES.length);
-      const isTch=['head_teacher','teacher_kf_lower','teacher_kf_upper','teacher_non_kf'].includes(t);
-      const isOff=['weo','deo','other_official'].includes(t);
-      const isPrt=['rc','arc','volunteer'].includes(t);
+      const isTch=['head_teacher','teacher_kf','teacher_non_kf'].includes(t);
+      const isOff=['weo','district_official'].includes(t);
+      const isPrt=['regional_officer','rc','arc','volunteer'].includes(t);
       const np=1+Math.floor(Math.random()*3);
       const pr=[...pris].sort(()=>Math.random()-.5).slice(0,np).join(' ');
       rows.push({respondent_type:t,region:rg,lga:lg,_submission_time:dt.toISOString(),_submitted_by:ENAMES[ei].toLowerCase().replace(' ','.'),enumerator_name:ENAMES[ei],
@@ -310,7 +310,7 @@ function r2(){
   }
   const rv=sel.value;
   const data=rv?AD.filter(d=>d.region===rv):AD;
-  const tg=rv?{head_teacher:Math.round(700/11),teacher_kf_lower:Math.round(1400/11),teacher_kf_upper:Math.round(700/11),teacher_non_kf:5,weo:10,deo:3,other_official:3,rc:2,arc:2,volunteer:Math.round(50/11)}:TGT;
+  const tg=rv?{head_teacher:26,teacher_kf:52,teacher_non_kf:26,weo:15,district_official:6,regional_officer:2,rc:2,arc:2,volunteer:4}:TGT;
   const ttg=Object.values(tg).reduce((a,b)=>a+b,0);
   const n=data.length,p=Math.round(n/ttg*100),td=new Date().toISOString().slice(0,10);
   const tn=data.filter(d=>d._submission_time&&d._submission_time.slice(0,10)===td).length;
@@ -350,8 +350,8 @@ function r3(){
 
 // ── RENDER TAB 4 ──────────────────────────────────────────────
 function r4(){
-  const tc=AD.filter(d=>['head_teacher','teacher_kf_lower','teacher_kf_upper'].includes(d.respondent_type));
-  const of=AD.filter(d=>['weo','deo','other_official'].includes(d.respondent_type));
+  const tc=AD.filter(d=>['head_teacher','teacher_kf','teacher_kf'].includes(d.respondent_type));
+  const of=AD.filter(d=>['weo','district_official','district_official'].includes(d.respondent_type));
   const pt=AD.filter(d=>['rc','arc','volunteer'].includes(d.respondent_type));
   document.getElementById('rs-n').textContent=tc.length;
   const aq=avf(tc,'a6_overall_kf');document.getElementById('rs-q').textContent=aq?aq.toFixed(1):'—';
