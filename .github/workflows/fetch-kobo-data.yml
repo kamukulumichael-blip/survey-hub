@@ -76,7 +76,7 @@ jobs:
               if ai_text.startswith('```'): ai_text = '\n'.join(ai_text.split('\n')[1:-1])
               ai_json = json.loads(ai_text)
               insights = {"generated_at": datetime.datetime.utcnow().isoformat()+"Z", "total_records": count, **ai_json}
-              with open('insights.json', 'w', ensure_ascii=False) as f:
+              with open('insights.json', 'w', encoding='utf-8') as f:
                   json.dump(insights, f, indent=2, ensure_ascii=False)
               print(f"Insights written: {ai_json.get('headline','')}")
           except Exception as e:
