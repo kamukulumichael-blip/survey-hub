@@ -255,13 +255,41 @@ function mkDemo(){
   return rows;
 }
 
+// ── FIELD NORMALIZER ─────────────────────────────────────────
+// KoboToolbox returns fields prefixed: "group_id/field" — strip and remap.
+function toTC(s){if(!s)return'';return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());}
+function normalize(r){
+  const n={};
+  for(const [k,v] of Object.entries(r)){
+    if(k.startsWith('_')){n[k]=v;}else{const bare=k.includes('/')?k.split('/').pop():k;n[bare]=v;}
+  }
+  n.respondent_type=(r['group_id/respondent_type']||n.respondent_type||'').toLowerCase();
+  n.region=toTC(r['group_id/region']||n.region||'');
+  n.lga=toTC(r['group_id/lga']||n.lga||'');
+  n.enumerator_name=r['group_id/resp_name']||n.resp_name||r._submitted_by||'';
+  n.a1_teaching_quality=r['group_a/a1_teaching_quality']||n.a1_teaching_quality||'';
+  n.a2_materials=r['group_a/a2_materials']||n.a2_materials||'';
+  n.a3_coach_support=r['group_a/a3_coach_support']||n.a3_coach_support||'';
+  n.a4_learning_gains=r['group_a/a4_learning_gains']||n.a4_learning_gains||'';
+  n.a6_overall_kf=r['group_a/a6_overall_kf']||n.a6_overall_kf||'';
+  n.b4_scale_ready=r['group_c/c5_level_readiness']||n.c5_level_readiness||'';
+  const intgMap={yes_full:'5',yes_partial:'3',yes_cond:'3',unsure:'2',no:'1'};
+  n.b5_govt_integrate=intgMap[r['group_c/c4_integration']||n.c4_integration||'']||'';
+  n.e6_overall=r['group_e/e1_overall_partnership']||n.e1_overall_partnership||'';
+  n.e1_rc_comm=r['group_e/e2_communication']||n.e2_communication||'';
+  n.e2_rc_support=r['group_e/e3_input_heard']||n.e3_input_heard||'';
+  n.d5_priority=r['group_d/d5_priority']||n.d5_priority||'';
+  n.f1_feedback=r['group_f/f1_continue']||n.f1_continue||'';
+  n.f2_suggestions=r['group_f/f2_change']||n.f2_change||r['group_f/f3_other']||'';
+  return n;
+}
 async function loadData(){
   try{
-    // Read from same-origin data.json (written by GitHub Actions every 30 min)
     const res=await fetch('./data.json?_='+Date.now());
     if(!res.ok)throw new Error('data.json missing: HTTP '+res.status);
     const j=await res.json();const r=j.results||j;
-    AD=Array.isArray(r)?r:[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
+    const raw2=Array.isArray(r)?r:[];
+    AD=raw2.length>0?raw2.map(normalize):[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
   }catch(e){DEMO=true;AD=mkDemo();}
   document.getElementById('badge').textContent=DEMO?'DEMO':'LIVE';
   document.getElementById('badge').className='badge '+(DEMO?'demo-bg':'live-bg');
@@ -359,8 +387,8 @@ function r4(){
   const lkCols=[C.c,'#d4724e',C.s,C.k,C.i];
   mk('rs-rdy',{type:'doughnut',data:{labels:['1','2','3','4','5'],datasets:[{data:lkd(of,'b4_scale_ready'),backgroundColor:lkCols,borderWidth:1}]},options:{...DS({plugins:{legend:{display:true,position:'bottom',labels:{font:{size:9},boxWidth:10}}}})}});
   mk('rs-int',{type:'doughnut',data:{labels:['1','2','3','4','5'],datasets:[{data:lkd(of,'b5_govt_integrate'),backgroundColor:lkCols,borderWidth:1}]},options:{...DS({plugins:{legend:{display:true,position:'bottom',labels:{font:{size:9},boxWidth:10}}}})}});
-  const pOpts=['kiufunza_sustain','soma_expand','ai_integration','evidence_publishing','govt_partnerships'];
-  mk('rs-pri',{type:'bar',data:{labels:['Sustain KiuFunza','Expand SOMA','AI Integration','Evidence Publishing','Govt Partnerships'],datasets:[{data:mc(AD,'d5_priority',pOpts),backgroundColor:[C.i,C.k,C.s,C.c,'#6b7fc4'],borderRadius:4}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
+  const pOpts=['expand_kf','new_programs','evidence','govt_partnership','ai'];
+  mk('rs-pri',{type:'bar',data:{labels:['Expand KiuFunza','New Programs','Evidence','Govt Partnership','AI Integration'],datasets:[{data:mc(AD,'d5_priority',pOpts),backgroundColor:[C.i,C.k,C.s,C.c,'#6b7fc4'],borderRadius:4}]},options:{...DS(),scales:{x:{ticks:{font:{size:9}}},y:{beginAtZero:true,ticks:{font:{size:9}}}}}});
   document.getElementById('rs-pbar').innerHTML=[['RC Communication','e1_rc_comm'],['RC Support','e2_rc_support'],['Overall Partner Satisfaction','e6_overall']].map(([l,f])=>{const v=avf(pt,f),p=Math.round(v/5*100),cl=sc(p);return`<div class="pr"><div class="ph"><span>${l}</span><span style="color:${cl};font-weight:700">${v?v.toFixed(1)+'/5':'—'}</span></div><div class="pt"><div class="pf" style="width:${p||0}%;background:${cl}"></div></div></div>`;}).join('');
 }
 
@@ -372,7 +400,7 @@ function r5(){
   const data=fv?AD.filter(d=>d.respondent_type===fv):AD;
   const frows=data.filter(d=>d.f1_feedback||d.f2_suggestions);
   document.getElementById('fb-n').textContent=frows.length;
-  const THM={quality:['ubora','quality','bora','vizuri'],scale:['scale','upanuzi','serikali','government'],materials:['vitabu','materials','rasilimali'],training:['mafunzo','training'],support:['support','msaada','coaching']};
+  const THM={quality:['ubora','quality','bora','vizuri','walimu','teachers'],scale:['scale','upanuzi','serikali','government','kuendelea','kupanua'],materials:['vitabu','materials','rasilimali','posho'],training:['mafunzo','training','uwezo'],support:['support','msaada','coaching','ushirikiano','waratibu']};
   const THLB={quality:'Program Quality',scale:'Scale & Govt',materials:'Materials',training:'Training',support:'Support & Coaching'};
   document.getElementById('fb-themes').innerHTML=Object.entries(THM).map(([th,kws])=>{const n=frows.filter(r=>kws.some(k=>(r.f1_feedback+' '+r.f2_suggestions).toLowerCase().includes(k))).length;return n>0?`<span class="tag">💬 ${THLB[th]} <strong>(${n})</strong></span>`:''}).join(' ');
   const rec=[...frows].sort((a,b)=>new Date(b._submission_time)-new Date(a._submission_time)).slice(0,15);
