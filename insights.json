@@ -1,10 +1,18 @@
 {
-  "generated_at": "2026-06-05T19:31:44.122399Z",
-  "status": "error",
-  "headline": "AI analysis temporarily unavailable.",
-  "collection_status": "'ensure_ascii' is an invalid keyword argument for open()",
-  "key_findings": [],
-  "flags": [],
-  "recommendation": "",
-  "total_records": 8
+  "generated_at": "2026-06-05T19:33:31.984371Z",
+  "total_records": 8,
+  "headline": "Survey severely behind schedule: 8 responses of 1,350 target (0.6%), urgent acceleration required.",
+  "collection_status": "Collection is critically delayed with only 8 responses across 2 of 10 planned regions after apparent survey launch. Current pace would require 169 weeks to reach target at this rate. MARA and SONGWE dominate early responses, suggesting potential geographic collection bias or limited outreach to other 8 regions.",
+  "key_findings": [
+    "Respondent skew: 75% volunteers, 25% regional coordinators—likely reflects early-stage convenience sampling rather than intentional stratification across partner types",
+    "High partner satisfaction (4.8/5) but moderate scale readiness (3.0/5) indicates willingness to expand exists but operational/resource constraints are real",
+    "Top priorities align: new_programs (5 mentions) and expand_kf (3 mentions) show stakeholder appetite for growth, with recurring themes around teacher incentives, government integration, and digital monitoring",
+    "Feedback quality suggests engaged respondents, but sample size too small (n=8) to generate statistically reliable insights or regional comparisons"
+  ],
+  "flags": [
+    "Critical: At 0.6% of target with only 2 regions active, survey will miss deadline without immediate intervention—review sampling strategy and resource allocation across all 10 regions",
+    "Geographic concentration risk: MARA/SONGWE account for 100% of responses; remaining 8 regions unrepresented, skewing findings and limiting regional comparative analysis",
+    "Respondent representativeness unclear: lack of data on teacher participation, school administrators, and government officials limits stakeholder diversity needed for credible findings"
+  ],
+  "recommendation": "Immediately audit and redistribute collection resources across all 10 regions with targeted outreach to underrepresented stakeholder groups (teachers, school leaders, government partners). Reset weekly targets at ~130 responses/week to recover lost ground and establish quality controls on respondent stratification before mid-survey checkpoint."
 }
