@@ -1,4 +1,4 @@
-name: Fetch KoboToolbox Data
+name: Fetch KoboToolbox Data + AI Insights
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:           # allow manual trigger
 
 jobs:
-  fetch-data:
+  fetch-and-analyse:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,12 +21,75 @@ jobs:
             -H "Authorization: Token c1bdf4caa31fb403692651a07b6e0b40c7d6b351" \
             "https://kf.kobotoolbox.org/api/v2/assets/a9PoUCJY6iP9EfXwV8WSxx/data/?format=json&limit=10000" \
             -o data.json
-          echo "Records fetched: $(python3 -c "import json; d=json.load(open('data.json')); print(d.get('count','error'))")"
+          echo "Records: $(python3 -c "import json; d=json.load(open('data.json')); print(d.get('count','error'))")"
 
-      - name: Commit if data changed
+      - name: Generate AI insights
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'PYEOF'
+          import json, urllib.request, urllib.error, datetime, os
+
+          with open('data.json') as f:
+              raw = json.load(f)
+          records = raw.get('results', [])
+          count = len(records)
+
+          if count == 0:
+              insights = {"generated_at": datetime.datetime.utcnow().isoformat()+"Z", "status": "no_data", "headline": "No submissions yet.", "collection_status": "Survey collection has not started.", "key_findings": [], "flags": ["No data available yet."], "recommendation": "Deploy the survey form and brief enumerators.", "total_records": 0}
+              with open('insights.json', 'w') as f:
+                  json.dump(insights, f, indent=2)
+              print("No data — wrote empty insights.json")
+              exit(0)
+
+          from collections import Counter
+          types = Counter(r.get('group_id/respondent_type','') for r in records)
+          regions = Counter(r.get('group_id/region','') for r in records)
+          priorities = []
+          for r in records:
+              p = r.get('group_d/d5_priority','')
+              if p: priorities.extend(p.split())
+          priority_counts = Counter(priorities)
+          part_scores = [float(r['group_e/e1_overall_partnership']) for r in records if r.get('group_e/e1_overall_partnership','').strip().lstrip('-').replace('.','').isdigit()]
+          scale_scores = [float(r['group_c/c5_level_readiness']) for r in records if r.get('group_c/c5_level_readiness','').strip().isdigit()]
+          feedback = [r.get('group_f/f1_continue','') or r.get('group_f/f2_change','') for r in records]
+          feedback = [f[:200] for f in feedback if f and len(f)>20][:8]
+
+          stats = {"total": count, "respondent_types": dict(types.most_common()), "regions_active": dict(regions.most_common()), "top_priorities": dict(priority_counts.most_common(5)), "avg_partner_satisfaction": round(sum(part_scores)/len(part_scores),1) if part_scores else None, "avg_scale_readiness": round(sum(scale_scores)/len(scale_scores),1) if scale_scores else None, "feedback_samples": feedback}
+
+          prompt = f"""You are analysing the KiuFunza Stakeholder Survey 2026 for LearnImpact Tanzania (target: 1,350 responses across 10 regions). Current data:\n{json.dumps(stats, indent=2, ensure_ascii=False)}\n\nGenerate a concise intelligence briefing. Respond ONLY with valid JSON (no markdown) with these keys:\n- headline: one punchy sentence on overall progress (max 20 words)\n- collection_status: 2-3 sentences on pace and coverage\n- key_findings: array of 3-4 bullet strings on what the data shows\n- flags: array of 1-3 alert strings needing attention\n- recommendation: 1-2 sentences on the most important action right now\n\nBe direct, evidence-based, use numbers. Speak to a programme director."""
+
+          api_key = os.environ.get('ANTHROPIC_API_KEY','')
+          if not api_key:
+              print("No ANTHROPIC_API_KEY — skipping AI insights")
+              insights = {"generated_at": datetime.datetime.utcnow().isoformat()+"Z", "status": "no_api_key", "headline": "AI insights not configured.", "collection_status": "Set ANTHROPIC_API_KEY secret to enable AI insights.", "key_findings": [], "flags": ["ANTHROPIC_API_KEY secret not set."], "recommendation": "Add ANTHROPIC_API_KEY in repo Settings > Secrets > Actions.", "total_records": count}
+              with open('insights.json', 'w') as f:
+                  json.dump(insights, f, indent=2)
+              exit(0)
+
+          payload = json.dumps({"model": "claude-haiku-4-5-20251001", "max_tokens": 800, "messages": [{"role": "user", "content": prompt}]}).encode()
+          req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=payload, headers={"x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  result = json.loads(resp.read())
+              ai_text = result['content'][0]['text'].strip()
+              if ai_text.startswith('```'): ai_text = '\n'.join(ai_text.split('\n')[1:-1])
+              ai_json = json.loads(ai_text)
+              insights = {"generated_at": datetime.datetime.utcnow().isoformat()+"Z", "total_records": count, **ai_json}
+              with open('insights.json', 'w', ensure_ascii=False) as f:
+                  json.dump(insights, f, indent=2, ensure_ascii=False)
+              print(f"Insights written: {ai_json.get('headline','')}")
+          except Exception as e:
+              print(f"AI insights failed: {e}")
+              insights = {"generated_at": datetime.datetime.utcnow().isoformat()+"Z", "status": "error", "headline": "AI analysis temporarily unavailable.", "collection_status": str(e)[:200], "key_findings": [], "flags": [], "recommendation": "", "total_records": count}
+              with open('insights.json', 'w') as f:
+                  json.dump(insights, f, indent=2)
+          PYEOF
+
+      - name: Commit if changed
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add data.json
-          git diff --staged --quiet && echo "No changes to commit" || \
-            (git commit -m "data: refresh from KoboToolbox [skip pages]" && git push)
+          git add data.json insights.json
+          git diff --staged --quiet && echo "No changes" || \
+            (git commit -m "data: refresh + AI insights [skip pages]" && git push)
