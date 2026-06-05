@@ -63,6 +63,17 @@ select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-
   .tab{padding:10px 11px;font-size:11px}
   .panel{padding:8px}
 }
+
+.ins-card{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:12px}
+.ins-headline{font-size:15px;font-weight:800;color:#354062;line-height:1.4;margin-bottom:4px}
+.ins-ts{font-size:10px;color:#bbb;margin-bottom:14px}
+.ins-sec{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#354062;margin:14px 0 7px}
+.ins-body{font-size:12px;line-height:1.6;color:#444}
+.ins-bullet{display:flex;gap:8px;margin-bottom:6px;font-size:12px;color:#333;line-height:1.5}
+.ins-bullet::before{content:'→';color:#5EA6B8;font-weight:700;flex-shrink:0}
+.ins-flag{background:#fff3cd;border-left:3px solid #FFC650;padding:6px 10px;border-radius:0 6px 6px 0;font-size:11px;color:#856404;margin-bottom:6px}
+.ins-rec{background:#e8edf5;border-left:3px solid #354062;padding:8px 12px;border-radius:0 6px 6px 0;font-size:12px;color:#354062;margin-top:4px;line-height:1.5}
+.ins-loading{text-align:center;padding:40px 16px;color:#999;font-size:13px}
 </style>
 </head>
 <body>
@@ -82,6 +93,7 @@ select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-
   <div class="tab"     onclick="sw(3)">👤 Enumerators</div>
   <div class="tab"     onclick="sw(4)">📊 Results</div>
   <div class="tab"     onclick="sw(5)">💬 Feedback</div>
+  <div class="tab"     onclick="sw(6)">🧠 Insights</div>
 </div>
 
 <!-- ── TAB 0: OVERVIEW ─────────────────────────────────────── -->
@@ -197,6 +209,27 @@ select{width:100%;border:1px solid #ddd;border-radius:8px;padding:8px 12px;font-
   <div class="foot"><span class="dot" style="background:#5EA6B8"></span>Auto-refreshes every 5 min</div>
 </div>
 
+
+<!-- ── TAB 6: AI INSIGHTS ──────────────────────────────────── -->
+<div id="p6" class="panel">
+  <div id="ins-loading" class="ins-loading"><div style="font-size:28px;margin-bottom:8px">🧠</div>Loading AI insights…</div>
+  <div id="ins-content" style="display:none">
+    <div class="ins-card">
+      <div class="ins-headline" id="ins-headline">—</div>
+      <div class="ins-ts" id="ins-ts"></div>
+      <div class="ins-sec">Collection Status</div>
+      <div class="ins-body" id="ins-collection"></div>
+      <div class="ins-sec">Key Findings</div>
+      <div id="ins-findings"></div>
+      <div class="ins-sec">⚠️ Flags</div>
+      <div id="ins-flags"></div>
+      <div class="ins-sec">Recommended Action</div>
+      <div class="ins-rec" id="ins-rec"></div>
+    </div>
+  </div>
+  <div class="foot"><span class="dot" style="background:#5EA6B8"></span>AI analysis regenerated every 30 min · Powered by Claude · LearnImpact 2026</div>
+</div>
+
 <script>
 // ── CONFIG ────────────────────────────────────────────────────
 const CFG={server:'https://kf.kobotoolbox.org',asset:'a9PoUCJY6iP9EfXwV8WSxx',token:'c1bdf4caa31fb403692651a07b6e0b40c7d6b351',limit:10000,refresh_ms:300000};
@@ -283,10 +316,37 @@ function normalize(r){
   n.f2_suggestions=r['group_f/f2_change']||n.f2_change||r['group_f/f3_other']||'';
   return n;
 }
+// ── FIELD NORMALIZER ─────────────────────────────────────────
+function toTC(s){if(!s)return'';return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());}
+function normalize(r){
+  const n={};
+  for(const [k,v] of Object.entries(r)){
+    if(k.startsWith('_')){n[k]=v;}else{const bare=k.includes('/')?k.split('/').pop():k;n[bare]=v;}
+  }
+  n.respondent_type=(r['group_id/respondent_type']||n.respondent_type||'').toLowerCase();
+  n.region=toTC(r['group_id/region']||n.region||'');
+  n.lga=toTC(r['group_id/lga']||n.lga||'');
+  n.enumerator_name=r['group_id/resp_name']||n.resp_name||r._submitted_by||'';
+  n.a1_teaching_quality=r['group_a/a1_teaching_quality']||n.a1_teaching_quality||'';
+  n.a2_materials=r['group_a/a2_materials']||n.a2_materials||'';
+  n.a3_coach_support=r['group_a/a3_coach_support']||n.a3_coach_support||'';
+  n.a4_learning_gains=r['group_a/a4_learning_gains']||n.a4_learning_gains||'';
+  n.a6_overall_kf=r['group_a/a6_overall_kf']||n.a6_overall_kf||'';
+  n.b4_scale_ready=r['group_c/c5_level_readiness']||n.c5_level_readiness||'';
+  const im={yes_full:'5',yes_partial:'3',yes_cond:'3',unsure:'2',no:'1'};
+  n.b5_govt_integrate=im[r['group_c/c4_integration']||n.c4_integration||'']||'';
+  n.e6_overall=r['group_e/e1_overall_partnership']||n.e1_overall_partnership||'';
+  n.e1_rc_comm=r['group_e/e2_communication']||n.e2_communication||'';
+  n.e2_rc_support=r['group_e/e3_input_heard']||n.e3_input_heard||'';
+  n.d5_priority=r['group_d/d5_priority']||n.d5_priority||'';
+  n.f1_feedback=r['group_f/f1_continue']||n.f1_continue||'';
+  n.f2_suggestions=r['group_f/f2_change']||n.f2_change||r['group_f/f3_other']||'';
+  return n;
+}
 async function loadData(){
   try{
     const res=await fetch('./data.json?_='+Date.now());
-    if(!res.ok)throw new Error('data.json missing: HTTP '+res.status);
+    if(!res.ok)throw new Error('data.json missing');
     const j=await res.json();const r=j.results||j;
     const rr=Array.isArray(r)?r:[];
     AD=rr.length>0?rr.map(normalize):[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
@@ -407,8 +467,39 @@ function r5(){
   document.getElementById('fb-list').innerHTML=rec.map(r=>`<div class="fbi"><div class="fbm">${RTL[r.respondent_type]||r.respondent_type} · ${r.region||''} · ${fdt(r._submission_time)}</div><div class="fbt">${r.f1_feedback||r.f2_suggestions}</div></div>`).join('');
 }
 
+
+// ── RENDER TAB 6: AI INSIGHTS ─────────────────────────────────
+async function r6(){
+  const loading=document.getElementById('ins-loading');
+  const insContent=document.getElementById('ins-content');
+  loading.style.display='block';insContent.style.display='none';
+  try{
+    const res=await fetch('./insights.json?_='+Date.now());
+    if(!res.ok)throw new Error('not found');
+    const d=await res.json();
+    if(!d.headline||d.status==='no_data'){
+      loading.innerHTML='<div style="font-size:28px;margin-bottom:8px">📊</div>Not enough data yet.<br><span style="font-size:10px;color:#bbb">Insights appear automatically once responses come in.</span>';
+      return;
+    }
+    if(d.status==='no_api_key'){
+      loading.innerHTML='<div style="font-size:28px;margin-bottom:8px">🔑</div>AI insights not configured.<br><span style="font-size:10px;color:#bbb">Set ANTHROPIC_API_KEY in repo Settings → Secrets → Actions.</span>';
+      return;
+    }
+    document.getElementById('ins-headline').textContent=d.headline||'';
+    const ts=d.generated_at?new Date(d.generated_at).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}):'';
+    document.getElementById('ins-ts').textContent=ts?'Generated '+ts+' UTC · '+(d.total_records||0)+' responses analysed':'';
+    document.getElementById('ins-collection').textContent=d.collection_status||'';
+    document.getElementById('ins-findings').innerHTML=(d.key_findings||[]).map(f=>'<div class="ins-bullet">'+f+'</div>').join('');
+    document.getElementById('ins-flags').innerHTML=(d.flags||[]).map(f=>'<div class="ins-flag">'+f+'</div>').join('');
+    document.getElementById('ins-rec').textContent=d.recommendation||'';
+    loading.style.display='none';insContent.style.display='block';
+  }catch(e){
+    loading.innerHTML='<div style="font-size:28px;margin-bottom:8px">⏳</div>AI insights not available yet.<br><span style="font-size:10px;color:#bbb">They appear after the first data refresh once the secret is set.</span>';
+  }
+}
+
 // ── RENDER ALL / TAB SWITCH ───────────────────────────────────
-const RFN=[r0,r1,r2,r3,r4,r5];
+const RFN=[r0,r1,r2,r3,r4,r5,r6];
 let CUR=0;
 function renderAll(){RFN[CUR]();}
 function sw(i){
