@@ -256,7 +256,7 @@ function mkDemo(){
 }
 
 // ── FIELD NORMALIZER ─────────────────────────────────────────
-// KoboToolbox returns fields prefixed: "group_id/field" — strip and remap.
+// KoboToolbox returns fields prefixed "group_id/field" — strip and remap.
 function toTC(s){if(!s)return'';return s.toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());}
 function normalize(r){
   const n={};
@@ -273,8 +273,8 @@ function normalize(r){
   n.a4_learning_gains=r['group_a/a4_learning_gains']||n.a4_learning_gains||'';
   n.a6_overall_kf=r['group_a/a6_overall_kf']||n.a6_overall_kf||'';
   n.b4_scale_ready=r['group_c/c5_level_readiness']||n.c5_level_readiness||'';
-  const intgMap={yes_full:'5',yes_partial:'3',yes_cond:'3',unsure:'2',no:'1'};
-  n.b5_govt_integrate=intgMap[r['group_c/c4_integration']||n.c4_integration||'']||'';
+  const im={yes_full:'5',yes_partial:'3',yes_cond:'3',unsure:'2',no:'1'};
+  n.b5_govt_integrate=im[r['group_c/c4_integration']||n.c4_integration||'']||'';
   n.e6_overall=r['group_e/e1_overall_partnership']||n.e1_overall_partnership||'';
   n.e1_rc_comm=r['group_e/e2_communication']||n.e2_communication||'';
   n.e2_rc_support=r['group_e/e3_input_heard']||n.e3_input_heard||'';
@@ -288,8 +288,8 @@ async function loadData(){
     const res=await fetch('./data.json?_='+Date.now());
     if(!res.ok)throw new Error('data.json missing: HTTP '+res.status);
     const j=await res.json();const r=j.results||j;
-    const raw2=Array.isArray(r)?r:[];
-    AD=raw2.length>0?raw2.map(normalize):[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
+    const rr=Array.isArray(r)?r:[];
+    AD=rr.length>0?rr.map(normalize):[];DEMO=AD.length===0;if(DEMO)AD=mkDemo();
   }catch(e){DEMO=true;AD=mkDemo();}
   document.getElementById('badge').textContent=DEMO?'DEMO':'LIVE';
   document.getElementById('badge').className='badge '+(DEMO?'demo-bg':'live-bg');
@@ -400,7 +400,7 @@ function r5(){
   const data=fv?AD.filter(d=>d.respondent_type===fv):AD;
   const frows=data.filter(d=>d.f1_feedback||d.f2_suggestions);
   document.getElementById('fb-n').textContent=frows.length;
-  const THM={quality:['ubora','quality','bora','vizuri','walimu','teachers'],scale:['scale','upanuzi','serikali','government','kuendelea','kupanua'],materials:['vitabu','materials','rasilimali','posho'],training:['mafunzo','training','uwezo'],support:['support','msaada','coaching','ushirikiano','waratibu']};
+  const THM={quality:['ubora','quality','bora','vizuri','walimu'],scale:['scale','upanuzi','serikali','government','kuendelea','kupanua'],materials:['vitabu','materials','rasilimali','posho'],training:['mafunzo','training','uwezo'],support:['support','msaada','coaching','ushirikiano']};
   const THLB={quality:'Program Quality',scale:'Scale & Govt',materials:'Materials',training:'Training',support:'Support & Coaching'};
   document.getElementById('fb-themes').innerHTML=Object.entries(THM).map(([th,kws])=>{const n=frows.filter(r=>kws.some(k=>(r.f1_feedback+' '+r.f2_suggestions).toLowerCase().includes(k))).length;return n>0?`<span class="tag">💬 ${THLB[th]} <strong>(${n})</strong></span>`:''}).join(' ');
   const rec=[...frows].sort((a,b)=>new Date(b._submission_time)-new Date(a._submission_time)).slice(0,15);
