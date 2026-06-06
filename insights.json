@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T12:53:50.085953Z",
-  "total_records": 8,
-  "headline": "Survey at 0.6% completion: urgent acceleration needed across 8 regions to reach 1,350 target.",
-  "collection_status": "Only 8 responses collected against 1,350 target (0.59% completion). Active in just 2 of 10 regions (MARA: 5, SONGWE: 3). Current pace would deliver ~480 responses by survey close—68% short of target. Volunteer-heavy sample (75%) lacks institutional balance.",
+  "generated_at": "2026-06-06T16:48:23.253842Z",
+  "total_records": 9,
+  "headline": "Survey at 0.7% completion; urgent acceleration needed across 8 inactive regions.",
+  "collection_status": "9 responses collected against 1,350 target represents critical underperformance at current trajectory. Only 2 of 10 planned regions active (MARA, SONGWE). Without immediate intervention, survey will not reach statistical validity.",
   "key_findings": [
-    "Stakeholders prioritize new program development (5 mentions) over KiuFunza expansion (3 mentions), signaling demand for innovation beyond current scope",
-    "Partner satisfaction high at 4.8/5, but scale readiness low at 3.0/5—partners value work but doubt capacity for regional expansion",
-    "All 8 qualitative responses focus on teacher incentives, government policy integration, and digital monitoring—core operational gaps blocking scale",
-    "Zero coverage in 8 of 10 regions; MARA and SONGWE concentration suggests limited outreach infrastructure outside two pilot zones"
+    "Volunteer-heavy respondent base (67%) skews perspective; only 2 RC and 1 ARC responses limit institutional viewpoint on implementation capacity",
+    "Partner satisfaction high (4.8/5) but scale readiness low (2.9/5) signals confidence in quality cannot translate to expansion without structural strengthening",
+    "Consistent thematic demand: respondents prioritize new programs (56%) and KiuFunza expansion (33%), with emphasis on government policy integration and teacher incentives",
+    "Feedback reveals operational priorities—digital monitoring, inter-stakeholder communication, sustained incentives—that suggest gap between strategy and field execution"
   ],
   "flags": [
-    "Critical: 99.4% of survey target unmet; current trajectory misses deadline by 870 responses. Activate contingency sampling plan immediately.",
-    "Sample composition risk: 75% volunteers vs. 25% regional coordinators skews feedback toward grassroots; under-represents institutional stakeholder views needed for policy recommendations.",
-    "Geographic blind spot: 8 silent regions may harbor unmapped barriers (access, connectivity, engagement) that low response rates are masking."
+    "8 regions have zero responses; geographic coverage crisis threatens regional representativeness and survey validity",
+    "Scale readiness score of 2.9/5 contradicts expansion ambitions; organizational capacity constraints not yet surfaced in limited feedback sample",
+    "RC/ARC underrepresentation (3 of 9) risks missing critical data on implementation barriers and resource constraints at regional level"
   ],
-  "recommendation": "Immediately deploy targeted outreach to remaining 8 regions with pre-identified regional coordinator and institutional partner contacts. Rebalance respondent mix toward 40% RCs/institutional actors to strengthen policy-relevance of findings for government integration strategy."
+  "recommendation": "Immediately activate regional coordinators in 8 inactive regions with targeted outreach to RC/ARC stakeholders. Reframe collection as structured implementation assessment rather than satisfaction survey to unlock candid feedback on readiness gaps blocking expansion."
 }
