@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T08:18:03.410773Z",
+  "generated_at": "2026-06-06T12:53:50.085953Z",
   "total_records": 8,
-  "headline": "Survey at 0.6% completion; urgent acceleration needed across 8 regions to meet 1,350 target.",
-  "collection_status": "Only 8 responses collected against 1,350 target represents 0.6% progress. Data concentrated in 2 of 10 regions (MARA, SONGWE) with heavy volunteer skew (75%). Current pace will not meet objectives without immediate intervention.",
+  "headline": "Survey at 0.6% completion: urgent acceleration needed across 8 regions to reach 1,350 target.",
+  "collection_status": "Only 8 responses collected against 1,350 target (0.59% completion). Active in just 2 of 10 regions (MARA: 5, SONGWE: 3). Current pace would deliver ~480 responses by survey close—68% short of target. Volunteer-heavy sample (75%) lacks institutional balance.",
   "key_findings": [
-    "Volunteer-dominant sample (6/8) risks bias; only 2 RC responses suggests partner engagement is critically low across programme structure",
-    "Geographic coverage severely limited: MARA (5) and SONGWE (3) account for 100% of responses; 8 regions completely unrepresented",
-    "Priority consensus exists on programme expansion: new_programs (5/8) and expand_kf (3/8) indicate stakeholder appetite for scaling despite low satisfaction baseline (scale_readiness: 3.0/10)",
-    "Qualitative feedback emphasizes system sustainability: teacher incentives, government policy integration, digital monitoring, and multi-level coordination are recurrent themes across all 8 responses"
+    "Stakeholders prioritize new program development (5 mentions) over KiuFunza expansion (3 mentions), signaling demand for innovation beyond current scope",
+    "Partner satisfaction high at 4.8/5, but scale readiness low at 3.0/5—partners value work but doubt capacity for regional expansion",
+    "All 8 qualitative responses focus on teacher incentives, government policy integration, and digital monitoring—core operational gaps blocking scale",
+    "Zero coverage in 8 of 10 regions; MARA and SONGWE concentration suggests limited outreach infrastructure outside two pilot zones"
   ],
   "flags": [
-    "CRITICAL: 99.4% of target responses outstanding; current collection rate (8 responses) unsustainable for deadline—requires 3–4x acceleration immediately",
-    "COVERAGE GAP: 8 regions dormant; MARA and SONGWE monopolizing data suggests regional coordinators in other zones are non-functional or disengaged",
-    "SAMPLING RISK: 75% volunteer composition distorts findings; RC perspective under-represented, risking skewed programme recommendations"
+    "Critical: 99.4% of survey target unmet; current trajectory misses deadline by 870 responses. Activate contingency sampling plan immediately.",
+    "Sample composition risk: 75% volunteers vs. 25% regional coordinators skews feedback toward grassroots; under-represents institutional stakeholder views needed for policy recommendations.",
+    "Geographic blind spot: 8 silent regions may harbor unmapped barriers (access, connectivity, engagement) that low response rates are masking."
   ],
-  "recommendation": "Immediately audit and activate regional coordinator networks in all 10 regions with targeted outreach targets and weekly response tracking. Implement stratified quota system (min. 40% RC respondents) to rebalance sample and ensure representative feedback on partnership readiness before proceeding with expansion strategy."
+  "recommendation": "Immediately deploy targeted outreach to remaining 8 regions with pre-identified regional coordinator and institutional partner contacts. Rebalance respondent mix toward 40% RCs/institutional actors to strengthen policy-relevance of findings for government integration strategy."
 }
