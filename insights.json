@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T16:48:23.253842Z",
+  "generated_at": "2026-06-06T20:47:31.432756Z",
   "total_records": 9,
-  "headline": "Survey at 0.7% completion; urgent acceleration needed across 8 inactive regions.",
-  "collection_status": "9 responses collected against 1,350 target represents critical underperformance at current trajectory. Only 2 of 10 planned regions active (MARA, SONGWE). Without immediate intervention, survey will not reach statistical validity.",
+  "headline": "Survey at 0.7% completion with strong partner satisfaction but critical geographic and respondent gaps.",
+  "collection_status": "9 of 1,350 responses collected (0.67%). Only 2 of 10 target regions active (MARA, SONGWE). Respondent mix heavily skewed toward volunteers (67%) with minimal RC/ARC representation. Collection pace requires immediate acceleration to meet target.",
   "key_findings": [
-    "Volunteer-heavy respondent base (67%) skews perspective; only 2 RC and 1 ARC responses limit institutional viewpoint on implementation capacity",
-    "Partner satisfaction high (4.8/5) but scale readiness low (2.9/5) signals confidence in quality cannot translate to expansion without structural strengthening",
-    "Consistent thematic demand: respondents prioritize new programs (56%) and KiuFunza expansion (33%), with emphasis on government policy integration and teacher incentives",
-    "Feedback reveals operational priorities—digital monitoring, inter-stakeholder communication, sustained incentives—that suggest gap between strategy and field execution"
+    "Partner satisfaction exceptionally high (4.8/5) despite minimal data, suggesting strong relationship foundation for expansion messaging.",
+    "Scale readiness low (2.9/5) indicates operational readiness gaps that must be addressed before geographic expansion beyond current 2 regions.",
+    "Priority alignment clear: 56% prioritize new programs, 33% expansion of KiuFunza. Feedback emphasizes government engagement, teacher incentives, and digital monitoring systems.",
+    "Geographic concentration risk: 56% responses from MARA, 44% from SONGWE. 8 of 10 planned regions completely unrepresented."
   ],
   "flags": [
-    "8 regions have zero responses; geographic coverage crisis threatens regional representativeness and survey validity",
-    "Scale readiness score of 2.9/5 contradicts expansion ambitions; organizational capacity constraints not yet surfaced in limited feedback sample",
-    "RC/ARC underrepresentation (3 of 9) risks missing critical data on implementation barriers and resource constraints at regional level"
+    "Collection rate unsustainable: 9 responses in current period vs. 1,350 target requires ~150x acceleration. At current pace, survey completion estimated 150+ months.",
+    "Respondent representation imbalanced: volunteers dominate (67%); regional coordinators and assistant regional coordinators severely undersampled, limiting institutional perspective.",
+    "Geographic blindness: 80% of regions inactive. Cannot validate regional variation in priorities, readiness, or challenges before scaling."
   ],
-  "recommendation": "Immediately activate regional coordinators in 8 inactive regions with targeted outreach to RC/ARC stakeholders. Reframe collection as structured implementation assessment rather than satisfaction survey to unlock candid feedback on readiness gaps blocking expansion."
+  "recommendation": "Immediately activate collection in remaining 8 regions with targeted outreach to RC/ARC cohorts to correct respondent skew. Deploy regional coordinators as primary collection facilitators to accelerate pace and ensure institutional perspective. Establish weekly regional quotas (120+ responses/week) to close to 1,350 target within 12 weeks."
 }
