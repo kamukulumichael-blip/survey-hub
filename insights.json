@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-05T22:45:00.845266Z",
+  "generated_at": "2026-06-06T08:18:03.410773Z",
   "total_records": 8,
-  "headline": "Survey severely off-track: 8 responses against 1,350 target represents 0.6% completion.",
-  "collection_status": "Data collection is critically behind pace. At current rate (8 responses from 2 regions), reaching 1,350 responses across 10 regions by target is unachievable without immediate intervention. Only MARA and SONGWE regions active; 8 regions have zero engagement.",
+  "headline": "Survey at 0.6% completion; urgent acceleration needed across 8 regions to meet 1,350 target.",
+  "collection_status": "Only 8 responses collected against 1,350 target represents 0.6% progress. Data concentrated in 2 of 10 regions (MARA, SONGWE) with heavy volunteer skew (75%). Current pace will not meet objectives without immediate intervention.",
   "key_findings": [
-    "Respondent base skews heavily toward volunteers (75%) over regional coordinators (25%), limiting institutional perspective needed for scale readiness assessment",
-    "Top priorities cluster around expansion (new_programs: 5, expand_kf: 3) and government partnership integration, indicating stakeholder appetite exists but capacity/policy alignment unclear",
-    "Scale readiness average of 3.0/10 (assumed scale) suggests significant gaps in systems, digital monitoring, and inter-stakeholder communication for expansion",
-    "Feedback reveals consistent requests for teacher incentives, program monitoring systems, and government policy alignment—actionable but requires sustained partner coordination"
+    "Volunteer-dominant sample (6/8) risks bias; only 2 RC responses suggests partner engagement is critically low across programme structure",
+    "Geographic coverage severely limited: MARA (5) and SONGWE (3) account for 100% of responses; 8 regions completely unrepresented",
+    "Priority consensus exists on programme expansion: new_programs (5/8) and expand_kf (3/8) indicate stakeholder appetite for scaling despite low satisfaction baseline (scale_readiness: 3.0/10)",
+    "Qualitative feedback emphasizes system sustainability: teacher incentives, government policy integration, digital monitoring, and multi-level coordination are recurrent themes across all 8 responses"
   ],
   "flags": [
-    "Geographic coverage critically narrow: 2 of 10 regions active. Risk of regional bias invalidating survey findings for national scale recommendations.",
-    "Sampling composition threatens validity: 75% volunteer responses may overweight grassroots optimism; RC underrepresentation (2 responses) limits leadership perspective on feasibility.",
-    "Collection velocity unsustainable: 8 responses in unspecified timeframe. If this represents >1 month of effort, target completion is implausible without resource reallocation."
+    "CRITICAL: 99.4% of target responses outstanding; current collection rate (8 responses) unsustainable for deadline—requires 3–4x acceleration immediately",
+    "COVERAGE GAP: 8 regions dormant; MARA and SONGWE monopolizing data suggests regional coordinators in other zones are non-functional or disengaged",
+    "SAMPLING RISK: 75% volunteer composition distorts findings; RC perspective under-represented, risking skewed programme recommendations"
   ],
-  "recommendation": "Immediately audit collection methodology and resource allocation across all 10 regions. Establish weekly response targets per region and enforce RC quota (minimum 30% of regional sample) to ensure geographic and institutional diversity. Redeploy field staff or incentivize completion if current pace persists beyond week 2."
+  "recommendation": "Immediately audit and activate regional coordinator networks in all 10 regions with targeted outreach targets and weekly response tracking. Implement stratified quota system (min. 40% RC respondents) to rebalance sample and ensure representative feedback on partnership readiness before proceeding with expansion strategy."
 }
