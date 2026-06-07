@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-07T08:39:15.277483Z",
-  "total_records": 9,
-  "headline": "Survey at 0.7% completion with strong early sentiment but critical acceleration needed.",
-  "collection_status": "9 responses collected against 1,350 target represents severely lagging pace. Only 2 of 10 planned regions active (MARA, SONGWE). At current trajectory, survey will not reach minimum viable sample without immediate intervention.",
+  "generated_at": "2026-06-07T15:13:02.323606Z",
+  "total_records": 10,
+  "headline": "Survey at 0.7% completion; early data shows strong partner satisfaction but concerning scale readiness gaps.",
+  "collection_status": "Only 10 responses collected against 1,350 target (0.7% complete). Three regions active (MARA, SONGWE, KIGOMA) with seven regions untouched. Current pace projects 143 responses by survey close—a 89% shortfall requiring immediate acceleration.",
   "key_findings": [
-    "Volunteer respondents dominate (67% of sample) with minimal RC/ARC participation, skewing stakeholder representation toward field staff rather than management/coordination.",
-    "Partner satisfaction high (4.8/5) but scale readiness critically low (2.9/5), indicating enthusiasm without operational capacity to expand programs.",
-    "Top priority is new programs (56% of mentions) over strengthening existing KiuFunza model, suggesting either dissatisfaction with current approach or aspirational thinking disconnected from readiness.",
-    "Feedback emphasizes government integration, teacher incentives, and digital monitoring—operational pain points suggesting implementation gaps in current model."
+    "Volunteer respondents dominate (60%) over regional coordinators (20%) and assistant coordinators (20%), skewing sample toward ground-level perspective and away from leadership input.",
+    "Partner satisfaction exceptionally high at 4.8/5 contrasts sharply with scale readiness at 2.8/5, indicating stakeholders value current work but doubt organizational capacity for expansion.",
+    "Stakeholder priorities cluster around new program development (60%) over KiuFunza expansion (30%), suggesting appetite for diversification rather than deepening existing model.",
+    "Feedback themes emphasize teacher incentives, government integration, digital monitoring, and cross-stakeholder communication—operational enablers critical before scaling."
   ],
   "flags": [
-    "8 regions completely inactive with zero responses; risk of geographic blind spots in final dataset and skewed regional insights.",
-    "Scale readiness at 2.9/5 contradicts expansion ambitions; urgent need to diagnose capacity constraints before pursuing new programs priority.",
-    "Respondent type imbalance suggests RC/ARC underengagement; without management perspectives, survey misses critical bottleneck analysis."
+    "Geographic coverage severely limited to 3/10 regions; risk of regional blind spots and unrepresentative findings undermining strategic decisions.",
+    "Scale readiness deficit (2.8/5) contradicts expansion priorities in feedback; organizational constraints (staffing, systems, coordination) may not support stated ambitions.",
+    "Response rate trajectory unsustainable; current collection velocity will miss target by ~1,200 responses without urgent intervention in recruitment and outreach."
   ],
-  "recommendation": "Immediately launch targeted outreach to 8 inactive regions and prioritize RC/ARC recruitment to hit 15% sample completion within 2 weeks. Concurrently conduct rapid diagnostic on the scale readiness gap (2.9/5) to understand whether capacity constraints are resource, systems, or capability-driven before endorsing new program expansion."
+  "recommendation": "Immediately audit response collection channels and bottlenecks across inactive regions; simultaneously conduct rapid pulse interviews with 5-10 regional coordinators and education officials to validate scale readiness concerns before finalizing expansion strategy. This 1-2 week sprint will identify capability gaps blocking growth."
 }
