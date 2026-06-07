@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-07T15:13:02.323606Z",
-  "total_records": 10,
-  "headline": "Survey at 0.7% completion; early data shows strong partner satisfaction but concerning scale readiness gaps.",
-  "collection_status": "Only 10 responses collected against 1,350 target (0.7% complete). Three regions active (MARA, SONGWE, KIGOMA) with seven regions untouched. Current pace projects 143 responses by survey close—a 89% shortfall requiring immediate acceleration.",
+  "generated_at": "2026-06-07T20:03:07.778923Z",
+  "total_records": 15,
+  "headline": "Survey at 1% completion: urgent acceleration needed across 7 inactive regions.",
+  "collection_status": "15 responses collected against 1,350 target represents critical underperformance at survey midpoint equivalent. Only 3 of 10 regions active; Kigoma, Mara, Songwe account for 100% of responses. Current pace will yield ~30 responses if continued; requires 45x acceleration.",
   "key_findings": [
-    "Volunteer respondents dominate (60%) over regional coordinators (20%) and assistant coordinators (20%), skewing sample toward ground-level perspective and away from leadership input.",
-    "Partner satisfaction exceptionally high at 4.8/5 contrasts sharply with scale readiness at 2.8/5, indicating stakeholders value current work but doubt organizational capacity for expansion.",
-    "Stakeholder priorities cluster around new program development (60%) over KiuFunza expansion (30%), suggesting appetite for diversification rather than deepening existing model.",
-    "Feedback themes emphasize teacher incentives, government integration, digital monitoring, and cross-stakeholder communication—operational enablers critical before scaling."
+    "Volunteer-heavy sample (60%) risks bias; only 3 RC and 2 ARC respondents limit institutional perspective on policy and implementation capacity.",
+    "Stakeholder appetite strong: 73% prioritize new programs or KiuFunza expansion; scale readiness (2.7/10) severely lags ambition, signaling capability gaps.",
+    "Policy integration emerging priority: 3 coded responses reference government alignment and education sector policy inclusion; absent from top priorities suggests grassroots-leadership disconnect.",
+    "Partner satisfaction paradox: 4.6/10 satisfaction coexists with expansion requests, indicating stakeholders want more despite current service concerns."
   ],
   "flags": [
-    "Geographic coverage severely limited to 3/10 regions; risk of regional blind spots and unrepresentative findings undermining strategic decisions.",
-    "Scale readiness deficit (2.8/5) contradicts expansion priorities in feedback; organizational constraints (staffing, systems, coordination) may not support stated ambitions.",
-    "Response rate trajectory unsustainable; current collection velocity will miss target by ~1,200 responses without urgent intervention in recruitment and outreach."
+    "7 regions (70% of target) have zero representation; regional equity and generalizeability at risk.",
+    "Scale readiness score of 2.7 contradicts expansion consensus—stakeholders may lack realistic understanding of operational constraints or resource requirements.",
+    "Sample skewed toward volunteers; RC/ARC underrepresentation limits data on institutional readiness, policy feasibility, and district-level constraints."
   ],
-  "recommendation": "Immediately audit response collection channels and bottlenecks across inactive regions; simultaneously conduct rapid pulse interviews with 5-10 regional coordinators and education officials to validate scale readiness concerns before finalizing expansion strategy. This 1-2 week sprint will identify capability gaps blocking growth."
+  "recommendation": "Immediately deploy targeted mobilization to the 7 inactive regions with emphasis on recruiting RC and ARC respondents to balance sample. Conduct rapid in-depth interviews (5–10) with district officials on scale readiness gaps to diagnose whether low scores reflect training needs, resource shortage, or misaligned expectations."
 }
