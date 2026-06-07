@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T20:47:31.432756Z",
+  "generated_at": "2026-06-07T08:39:15.277483Z",
   "total_records": 9,
-  "headline": "Survey at 0.7% completion with strong partner satisfaction but critical geographic and respondent gaps.",
-  "collection_status": "9 of 1,350 responses collected (0.67%). Only 2 of 10 target regions active (MARA, SONGWE). Respondent mix heavily skewed toward volunteers (67%) with minimal RC/ARC representation. Collection pace requires immediate acceleration to meet target.",
+  "headline": "Survey at 0.7% completion with strong early sentiment but critical acceleration needed.",
+  "collection_status": "9 responses collected against 1,350 target represents severely lagging pace. Only 2 of 10 planned regions active (MARA, SONGWE). At current trajectory, survey will not reach minimum viable sample without immediate intervention.",
   "key_findings": [
-    "Partner satisfaction exceptionally high (4.8/5) despite minimal data, suggesting strong relationship foundation for expansion messaging.",
-    "Scale readiness low (2.9/5) indicates operational readiness gaps that must be addressed before geographic expansion beyond current 2 regions.",
-    "Priority alignment clear: 56% prioritize new programs, 33% expansion of KiuFunza. Feedback emphasizes government engagement, teacher incentives, and digital monitoring systems.",
-    "Geographic concentration risk: 56% responses from MARA, 44% from SONGWE. 8 of 10 planned regions completely unrepresented."
+    "Volunteer respondents dominate (67% of sample) with minimal RC/ARC participation, skewing stakeholder representation toward field staff rather than management/coordination.",
+    "Partner satisfaction high (4.8/5) but scale readiness critically low (2.9/5), indicating enthusiasm without operational capacity to expand programs.",
+    "Top priority is new programs (56% of mentions) over strengthening existing KiuFunza model, suggesting either dissatisfaction with current approach or aspirational thinking disconnected from readiness.",
+    "Feedback emphasizes government integration, teacher incentives, and digital monitoring—operational pain points suggesting implementation gaps in current model."
   ],
   "flags": [
-    "Collection rate unsustainable: 9 responses in current period vs. 1,350 target requires ~150x acceleration. At current pace, survey completion estimated 150+ months.",
-    "Respondent representation imbalanced: volunteers dominate (67%); regional coordinators and assistant regional coordinators severely undersampled, limiting institutional perspective.",
-    "Geographic blindness: 80% of regions inactive. Cannot validate regional variation in priorities, readiness, or challenges before scaling."
+    "8 regions completely inactive with zero responses; risk of geographic blind spots in final dataset and skewed regional insights.",
+    "Scale readiness at 2.9/5 contradicts expansion ambitions; urgent need to diagnose capacity constraints before pursuing new programs priority.",
+    "Respondent type imbalance suggests RC/ARC underengagement; without management perspectives, survey misses critical bottleneck analysis."
   ],
-  "recommendation": "Immediately activate collection in remaining 8 regions with targeted outreach to RC/ARC cohorts to correct respondent skew. Deploy regional coordinators as primary collection facilitators to accelerate pace and ensure institutional perspective. Establish weekly regional quotas (120+ responses/week) to close to 1,350 target within 12 weeks."
+  "recommendation": "Immediately launch targeted outreach to 8 inactive regions and prioritize RC/ARC recruitment to hit 15% sample completion within 2 weeks. Concurrently conduct rapid diagnostic on the scale readiness gap (2.9/5) to understand whether capacity constraints are resource, systems, or capability-driven before endorsing new program expansion."
 }
