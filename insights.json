@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-07T20:03:07.778923Z",
-  "total_records": 15,
-  "headline": "Survey at 1% completion: urgent acceleration needed across 7 inactive regions.",
-  "collection_status": "15 responses collected against 1,350 target represents critical underperformance at survey midpoint equivalent. Only 3 of 10 regions active; Kigoma, Mara, Songwe account for 100% of responses. Current pace will yield ~30 responses if continued; requires 45x acceleration.",
+  "generated_at": "2026-06-08T12:47:40.373811Z",
+  "total_records": 31,
+  "headline": "Early-stage collection at 2.3% of target; momentum concentrated in two regions.",
+  "collection_status": "31 responses collected against 1,350 target represents 2.3% completion. Data heavily skewed toward MARA (42%) and KIGOMA (35%); six regions have zero responses. Current pace suggests significant acceleration required to meet targets across all 10 regions.",
   "key_findings": [
-    "Volunteer-heavy sample (60%) risks bias; only 3 RC and 2 ARC respondents limit institutional perspective on policy and implementation capacity.",
-    "Stakeholder appetite strong: 73% prioritize new programs or KiuFunza expansion; scale readiness (2.7/10) severely lags ambition, signaling capability gaps.",
-    "Policy integration emerging priority: 3 coded responses reference government alignment and education sector policy inclusion; absent from top priorities suggests grassroots-leadership disconnect.",
-    "Partner satisfaction paradox: 4.6/10 satisfaction coexists with expansion requests, indicating stakeholders want more despite current service concerns."
+    "Expansion dominates stakeholder priorities: 48% cite expand_kf as top need, with policy advocacy (29%) second—signals strong appetite for scale but potential implementation readiness gap",
+    "Volunteer representation disproportionately high at 29% of responses; teachers and education officials underrepresented (16% combined across all teacher/official categories), risking skewed feedback on classroom realities",
+    "Scale readiness concern: avg_scale_readiness at 2.8/10 contradicts high expansion demand (4.6/10 partner satisfaction)—suggests stakeholders want growth but doubt operational capacity",
+    "Feedback themes consistently emphasize teacher incentives, government policy integration, and digital monitoring—actionable priorities across three implementation pillars"
   ],
   "flags": [
-    "7 regions (70% of target) have zero representation; regional equity and generalizeability at risk.",
-    "Scale readiness score of 2.7 contradicts expansion consensus—stakeholders may lack realistic understanding of operational constraints or resource requirements.",
-    "Sample skewed toward volunteers; RC/ARC underrepresentation limits data on institutional readiness, policy feasibility, and district-level constraints."
+    "Geographic blind spot: SONGWE (4 responses), MTWARA (3 responses), and six unreported regions represent 70%+ of target sample yet contribute <20% of data—high risk of unrepresentative findings",
+    "Teacher voice gap: only 9 responses from lower/upper KF teachers (29% of sample) versus 9 volunteers—insufficient data on implementation fidelity and classroom impact",
+    "Scale readiness disconnect: 2.8/10 score suggests fundamental concerns about operationalizing the expansion priorities stakeholders are demanding; root cause not yet explored"
   ],
-  "recommendation": "Immediately deploy targeted mobilization to the 7 inactive regions with emphasis on recruiting RC and ARC respondents to balance sample. Conduct rapid in-depth interviews (5–10) with district officials on scale readiness gaps to diagnose whether low scores reflect training needs, resource shortage, or misaligned expectations."
+  "recommendation": "Immediately redeploy collection effort to SONGWE, MTWARA and six silent regions with targeted teacher/head teacher recruitment. Conduct rapid deep-dive interviews (10–15) with lowest readiness respondents to diagnose scale barriers before proceeding with expansion strategy."
 }
