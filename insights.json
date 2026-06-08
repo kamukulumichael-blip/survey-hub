@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-08T12:47:40.373811Z",
-  "total_records": 31,
-  "headline": "Early-stage collection at 2.3% of target; momentum concentrated in two regions.",
-  "collection_status": "31 responses collected against 1,350 target represents 2.3% completion. Data heavily skewed toward MARA (42%) and KIGOMA (35%); six regions have zero responses. Current pace suggests significant acceleration required to meet targets across all 10 regions.",
+  "generated_at": "2026-06-08T21:16:34.785070Z",
+  "total_records": 80,
+  "headline": "Survey at 6% of target; strong regional concentration risks skew results.",
+  "collection_status": "80 responses collected against 1,350 target—on pace for ~288 annual responses if current rate holds. Geographic coverage heavily weighted to Lindi (31%) and Tanga (25%); four regions under-represented. Teacher respondents dominate (39 of 80), limiting diversity of perspectives.",
   "key_findings": [
-    "Expansion dominates stakeholder priorities: 48% cite expand_kf as top need, with policy advocacy (29%) second—signals strong appetite for scale but potential implementation readiness gap",
-    "Volunteer representation disproportionately high at 29% of responses; teachers and education officials underrepresented (16% combined across all teacher/official categories), risking skewed feedback on classroom realities",
-    "Scale readiness concern: avg_scale_readiness at 2.8/10 contradicts high expansion demand (4.6/10 partner satisfaction)—suggests stakeholders want growth but doubt operational capacity",
-    "Feedback themes consistently emphasize teacher incentives, government policy integration, and digital monitoring—actionable priorities across three implementation pillars"
+    "Expansion appetite is clear: 35 stakeholders (44%) prioritise expanding KiuFunza, with policy integration (15) and new programmes (16) as secondary levers for scale.",
+    "Partner satisfaction high (4.7/5) but scale readiness low (2.6/5)—indicates confidence in approach but material gaps in implementation capacity or systems readiness.",
+    "Feedback themes centre on sustained teacher incentives, digital monitoring, government alignment, and replication across districts—actionable but require resourcing and policy engagement.",
+    "Volunteer cohort (18 respondents) underrepresented relative to core programme staff; limited insight into community-level barriers or enablers."
   ],
   "flags": [
-    "Geographic blind spot: SONGWE (4 responses), MTWARA (3 responses), and six unreported regions represent 70%+ of target sample yet contribute <20% of data—high risk of unrepresentative findings",
-    "Teacher voice gap: only 9 responses from lower/upper KF teachers (29% of sample) versus 9 volunteers—insufficient data on implementation fidelity and classroom impact",
-    "Scale readiness disconnect: 2.8/10 score suggests fundamental concerns about operationalizing the expansion priorities stakeholders are demanding; root cause not yet explored"
+    "Geographic imbalance: Songwe, Mtwara, and Mara contribute only 21 responses combined (26% shortfall). Risk of regional blind spots in final report.",
+    "Scale readiness gap (2.6/5) with high expansion ambition suggests stakeholders want growth but doubt systems can absorb it—test capacity constraints before scaling.",
+    "Sample skew toward teachers and school leaders; missing voices from district education officials (5 respondents) and regional coordinators (1) who control policy levers."
   ],
-  "recommendation": "Immediately redeploy collection effort to SONGWE, MTWARA and six silent regions with targeted teacher/head teacher recruitment. Conduct rapid deep-dive interviews (10–15) with lowest readiness respondents to diagnose scale barriers before proceeding with expansion strategy."
+  "recommendation": "Immediately surge collection in Songwe, Mtwara, Mara, and other low-response regions to meet geographic targets. Simultaneously boost DEO/REO/arc outreach—these officials are critical for policy embedding, yet represent <5% of current sample. Recalibrate timeline: at current pace, reaching 1,350 by survey close requires 3–4x collection rate."
 }
