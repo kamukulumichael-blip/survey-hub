@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-09T18:33:59.611002Z",
-  "total_records": 157,
-  "headline": "Survey at 11.6% completion; strong engagement in 3 regions masks severe geographic gaps.",
-  "collection_status": "157 of 1,350 responses collected (11.6% progress). Lindi dominates with 40.8% of submissions; 3 regions remain inactive. Current pace suggests 6-9 month timeline to target if momentum accelerates significantly.",
+  "generated_at": "2026-06-09T23:54:35.334382Z",
+  "total_records": 161,
+  "headline": "Survey at 12% completion with strong regional concentration and clear expansion mandate.",
+  "collection_status": "161 of 1,350 responses collected (11.9% progress). LINDI dominates with 40% of responses; 7 of 10 target regions active. Current pace suggests 18-month trajectory to target without acceleration.",
   "key_findings": [
-    "Teacher representation strong (75 respondents, 47.8%) but head teachers and education officials underrepresented; WEO, RC, ARCs, DEOs collectively only 26 responses (16.6%).",
-    "Expansion priorities clear: 'Expand KF' (58 votes, 37%) and new programs (35 votes, 22%) dominate; policy alignment (32 votes) signals demand for government integration.",
-    "Scale readiness score 2.7/5 indicates significant operational and systemic barriers; partner satisfaction 4.5/5 suggests relationship strength masks implementation challenges.",
-    "Mtwara, Songwe, Singida severely underrepresented (13 combined responses, 8.3%); Ruvuma and Kagera absent entirely from 10-region target."
+    "Expansion is the dominant priority: 58 respondents (36%) explicitly prioritize expanding KiuFunza; new programs and policy reform together equal 71 requests, signaling readiness for growth.",
+    "Field-level engagement strong but incomplete: Teachers represent 75 of 161 (47%); Head Teachers 36 (22%); but District Education Officers (5), Regional Coordinators (5), and Regional Education Officers (2) are severely underrepresented, risking blind spots in scalability planning.",
+    "Scale readiness significantly lags satisfaction: Partner satisfaction averages 4.5/5, but scale readiness averages only 2.7/5—a 1.8-point gap indicating confidence in current work but anxiety about expansion capacity.",
+    "Feedback themes unmistakable: Teachers demand regular incentives, digital monitoring systems, and stakeholder communication; policymakers need sustained government engagement and integration into national education policy."
   ],
   "flags": [
-    "Geographic concentration risk: Lindi-Tanga-Kigoma account for 86.6% of responses; 7 regions inactive or critically underfunded.",
-    "Systemic readiness misalignment: High satisfaction (4.5/5) paired with low scale readiness (2.7/5) suggests stakeholders underestimate implementation complexity.",
-    "Official stakeholder gap: Only 21 responses from district/regional education officials (13.4%); policy recommendations lack institutional validation."
+    "Geographic imbalance critical: LINDI (64) represents 40% of sample; SINGIDA (1), MTWARA (8), SONGWE (8) require urgent catch-up collection to ensure representative policy insights.",
+    "District and regional leadership severely undersampled: Only 12 responses from District/Regional Education Officers (DLs, REOs, ARCs combined); risk of scaling blockers undetected at administrative level.",
+    "Scale readiness gap is a risk signal: 2.7/5 suggests on-ground teams uncertain about systems, staffing, or resources needed for growth—expansion plans may face implementation friction without addressing this."
   ],
-  "recommendation": "Immediately launch targeted push in Mtwara, Songwe, Singida, and absent regions with localized outreach to WEOs/REOs. Conduct rapid 1-on-1 interviews with 15-20 education officials to surface scale barriers and reframe readiness conversation before month-end."
+  "recommendation": "Immediately intensify collection in underrepresented regions (MTWARA, SONGWE, SINGIDA, TANGA) and prioritize District/Regional leader interviews (target: 30+ additional responses from education officials) to validate expansion feasibility and policy pathway before scaling decisions."
 }
