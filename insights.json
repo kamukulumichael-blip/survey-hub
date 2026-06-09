@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-09T10:43:53.679702Z",
-  "total_records": 141,
-  "headline": "Survey at 10% of target with strong regional concentration and clear expansion mandate.",
-  "collection_status": "141 responses collected against 1,350 target (10.4% completion). LINDI dominates with 45% of responses; 7 of 10 regions active but 3 regions (Dar es Salaam, Dodoma, Iringa) absent. Current pace insufficient to meet target without immediate acceleration.",
+  "generated_at": "2026-06-09T18:33:59.611002Z",
+  "total_records": 157,
+  "headline": "Survey at 11.6% completion; strong engagement in 3 regions masks severe geographic gaps.",
+  "collection_status": "157 of 1,350 responses collected (11.6% progress). Lindi dominates with 40.8% of submissions; 3 regions remain inactive. Current pace suggests 6-9 month timeline to target if momentum accelerates significantly.",
   "key_findings": [
-    "Expand KiuFunza is dominant priority (37% of respondents), followed by new programs (21%) and policy integration (20%), indicating stakeholder consensus on scaling over research.",
-    "Partner satisfaction high at 4.5/5 but scale readiness critically low at 2.7/5, suggesting capability gaps in systems, training, or infrastructure needed for expansion.",
-    "Teacher representation strong (48 KF-lower + 17 KF-upper = 46% of sample) but volunteer/community voices underrepresented (20 volunteers vs. institutional respondents), risking grassroots perspective gaps.",
-    "Qualitative feedback emphasizes government coordination, teacher incentives, digital monitoring systems, and inter-stakeholder communication—pointing to systemic barriers beyond program design."
+    "Teacher representation strong (75 respondents, 47.8%) but head teachers and education officials underrepresented; WEO, RC, ARCs, DEOs collectively only 26 responses (16.6%).",
+    "Expansion priorities clear: 'Expand KF' (58 votes, 37%) and new programs (35 votes, 22%) dominate; policy alignment (32 votes) signals demand for government integration.",
+    "Scale readiness score 2.7/5 indicates significant operational and systemic barriers; partner satisfaction 4.5/5 suggests relationship strength masks implementation challenges.",
+    "Mtwara, Songwe, Singida severely underrepresented (13 combined responses, 8.3%); Ruvuma and Kagera absent entirely from 10-region target."
   ],
   "flags": [
-    "Geographic coverage incomplete: 3 priority regions have zero responses; LINDI over-represents (45% of sample). Sampling bias risks regional strategy misalignment.",
-    "Scale readiness score (2.7/5) contradicts expansion appetite—urgent diagnostic needed on bottlenecks (capacity, funding, systems) before scaling commitment.",
-    "Collection rate at 10% completion with no clear acceleration plan visible; current trajectory misses target by 1,200+ responses without intervention."
+    "Geographic concentration risk: Lindi-Tanga-Kigoma account for 86.6% of responses; 7 regions inactive or critically underfunded.",
+    "Systemic readiness misalignment: High satisfaction (4.5/5) paired with low scale readiness (2.7/5) suggests stakeholders underestimate implementation complexity.",
+    "Official stakeholder gap: Only 21 responses from district/regional education officials (13.4%); policy recommendations lack institutional validation."
   ],
-  "recommendation": "Immediately launch targeted collection in underrepresented regions (Dar es Salaam, Dodoma, Iringa) and conduct rapid readiness assessment to diagnose the 2.7/5 scale gap—this will inform whether expansion should proceed or be phased pending systemic strengthening."
+  "recommendation": "Immediately launch targeted push in Mtwara, Songwe, Singida, and absent regions with localized outreach to WEOs/REOs. Conduct rapid 1-on-1 interviews with 15-20 education officials to surface scale barriers and reframe readiness conversation before month-end."
 }
