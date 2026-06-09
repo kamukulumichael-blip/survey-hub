@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-08T21:16:34.785070Z",
-  "total_records": 80,
-  "headline": "Survey at 6% of target; strong regional concentration risks skew results.",
-  "collection_status": "80 responses collected against 1,350 target—on pace for ~288 annual responses if current rate holds. Geographic coverage heavily weighted to Lindi (31%) and Tanga (25%); four regions under-represented. Teacher respondents dominate (39 of 80), limiting diversity of perspectives.",
+  "generated_at": "2026-06-09T10:43:53.679702Z",
+  "total_records": 141,
+  "headline": "Survey at 10% of target with strong regional concentration and clear expansion mandate.",
+  "collection_status": "141 responses collected against 1,350 target (10.4% completion). LINDI dominates with 45% of responses; 7 of 10 regions active but 3 regions (Dar es Salaam, Dodoma, Iringa) absent. Current pace insufficient to meet target without immediate acceleration.",
   "key_findings": [
-    "Expansion appetite is clear: 35 stakeholders (44%) prioritise expanding KiuFunza, with policy integration (15) and new programmes (16) as secondary levers for scale.",
-    "Partner satisfaction high (4.7/5) but scale readiness low (2.6/5)—indicates confidence in approach but material gaps in implementation capacity or systems readiness.",
-    "Feedback themes centre on sustained teacher incentives, digital monitoring, government alignment, and replication across districts—actionable but require resourcing and policy engagement.",
-    "Volunteer cohort (18 respondents) underrepresented relative to core programme staff; limited insight into community-level barriers or enablers."
+    "Expand KiuFunza is dominant priority (37% of respondents), followed by new programs (21%) and policy integration (20%), indicating stakeholder consensus on scaling over research.",
+    "Partner satisfaction high at 4.5/5 but scale readiness critically low at 2.7/5, suggesting capability gaps in systems, training, or infrastructure needed for expansion.",
+    "Teacher representation strong (48 KF-lower + 17 KF-upper = 46% of sample) but volunteer/community voices underrepresented (20 volunteers vs. institutional respondents), risking grassroots perspective gaps.",
+    "Qualitative feedback emphasizes government coordination, teacher incentives, digital monitoring systems, and inter-stakeholder communication—pointing to systemic barriers beyond program design."
   ],
   "flags": [
-    "Geographic imbalance: Songwe, Mtwara, and Mara contribute only 21 responses combined (26% shortfall). Risk of regional blind spots in final report.",
-    "Scale readiness gap (2.6/5) with high expansion ambition suggests stakeholders want growth but doubt systems can absorb it—test capacity constraints before scaling.",
-    "Sample skew toward teachers and school leaders; missing voices from district education officials (5 respondents) and regional coordinators (1) who control policy levers."
+    "Geographic coverage incomplete: 3 priority regions have zero responses; LINDI over-represents (45% of sample). Sampling bias risks regional strategy misalignment.",
+    "Scale readiness score (2.7/5) contradicts expansion appetite—urgent diagnostic needed on bottlenecks (capacity, funding, systems) before scaling commitment.",
+    "Collection rate at 10% completion with no clear acceleration plan visible; current trajectory misses target by 1,200+ responses without intervention."
   ],
-  "recommendation": "Immediately surge collection in Songwe, Mtwara, Mara, and other low-response regions to meet geographic targets. Simultaneously boost DEO/REO/arc outreach—these officials are critical for policy embedding, yet represent <5% of current sample. Recalibrate timeline: at current pace, reaching 1,350 by survey close requires 3–4x collection rate."
+  "recommendation": "Immediately launch targeted collection in underrepresented regions (Dar es Salaam, Dodoma, Iringa) and conduct rapid readiness assessment to diagnose the 2.7/5 scale gap—this will inform whether expansion should proceed or be phased pending systemic strengthening."
 }
