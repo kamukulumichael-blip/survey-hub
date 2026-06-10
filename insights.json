@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-10T16:35:33.298279Z",
-  "total_records": 199,
-  "headline": "Survey at 15% completion with strong regional concentration; urgent scaling needed.",
-  "collection_status": "199 of 1,350 responses collected (14.7% of target). Three regions (Lindi, Tanga, Mara) account for 78% of responses, leaving 7 regions severely underrepresented. Current pace suggests 6+ months to target without intervention.",
+  "generated_at": "2026-06-10T19:34:34.032725Z",
+  "total_records": 204,
+  "headline": "Survey at 15% completion; strong regional concentration risks skewing results.",
+  "collection_status": "204 of 1,350 responses collected (15% progress). Lindi dominates with 33% of responses; Songwe, Mtwara, and Singida significantly under-represented. Current pace suggests off-track delivery without intervention.",
   "key_findings": [
-    "Teachers dominate respondent pool (101/199, 51%), but critical district/regional education officials remain sparse (6 DEOs, 2 REOs, 1 other region-level). Leadership buy-in signals weak.",
-    "Expansion appetite is clear: 71 respondents prioritise expanding KiuFunza, with 40 flagging policy integration as essential—aligns with sustainability messaging but execution gap evident.",
-    "Scale readiness score of 2.7/5 contradicts expansion demand; suggests respondents want growth but lack confidence in systems/capacity to deliver it.",
-    "Feedback reveals three recurring themes: teacher motivation/incentives, digital monitoring systems, and government policy alignment—operationally specific, not aspirational."
+    "Teachers comprise 75% of sample (121/204); senior officials (DEO, REO, ARC) severely under-represented at 4%, limiting district/regional strategic input.",
+    "Expand KiuFunza priority leads with 72 mentions, but scale readiness average of 2.8/5 signals critical implementation gaps despite high enthusiasm.",
+    "Partner satisfaction strong at 4.5/5, but qualitative feedback emphasizes need for sustained teacher incentives, digital monitoring, and government policy integration—not yet reflected in scaled operations.",
+    "Singida (1 response) and Mtwara (12) critically under-resourced; geographic bias toward Lindi-Tanga corridor may miss regional variation in readiness and constraints."
   ],
   "flags": [
-    "Geographic collapse: Songwe (8), Singida (1), and Mtwara (12) combined = 21 responses. Risk of regional bias in findings and weak stakeholder engagement outside core zones.",
-    "Senior official under-representation: Only 6 DEOs and 2 REOs responding. Without district/regional leadership buy-in, policy and scale recommendations will lack credibility.",
-    "Mismatch between aspiration (expand KiuFunza) and confidence (2.7 readiness score): Respondents want growth but doubt organisational capacity—suggests training, resource, or trust deficits."
+    "Regional imbalance: Lindi + Tanga account for 54% of responses; Songwe, Mtwara, Singida combined = 4.4%. Risk of unrepresentative findings and missed regional voices.",
+    "Senior leadership gap: Only 13 responses from DEO/REO/ARC/REC combined. District and regional coordination priorities unheard; policy scale-up recommendations lack institutional anchoring.",
+    "Scale-readiness paradox: 2.8/5 average suggests implementation barriers (incentives, systems, coordination) undermine expansion ambitions. Feedback cites need for digital systems and inter-agency alignment not yet visible in data."
   ],
-  "recommendation": "Immediately redirect collection effort to underrepresented regions (Songwe, Singida, Mtwara) and prioritise DEO/REO outreach through regional directors—these voices are essential for credible scaling recommendations. Simultaneously, conduct rapid pulse interviews on the readiness gap to understand barriers behind the 2.7 score before final analysis."
+  "recommendation": "Immediately mobilize targeted collection in under-sampled regions (Songwe, Mtwara, Singida) and launch direct outreach to district/regional officials (target: 80+ DEO/REO/ARC responses). Parallel deep-dive on the 2.8 scale-readiness score to surface implementation blockers before expansion planning proceeds."
 }
