@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-10T12:41:26.987941Z",
-  "total_records": 173,
-  "headline": "Survey at 12.8% completion; Lindi dominates response but geographic spread remains weak.",
-  "collection_status": "173 of 1,350 responses collected (12.8%). Lindi accounts for 39% of all responses (68), while 3 of 10 regions have zero activity. Current pace requires acceleration to meet target within reasonable timeframe.",
+  "generated_at": "2026-06-10T16:35:33.298279Z",
+  "total_records": 199,
+  "headline": "Survey at 15% completion with strong regional concentration; urgent scaling needed.",
+  "collection_status": "199 of 1,350 responses collected (14.7% of target). Three regions (Lindi, Tanga, Mara) account for 78% of responses, leaving 7 regions severely underrepresented. Current pace suggests 6+ months to target without intervention.",
   "key_findings": [
-    "Teacher participation strong: 81 responses (46.8%) are KiuFunza teachers (lower + upper), validating direct programme reach.",
-    "Expansion priority dominates: 63 stakeholders (36.4%) prioritize expanding KiuFunza over all other initiatives; policy engagement cited by 33 (19.1%) shows demand for institutionalization.",
-    "Scale readiness gap critical: Average 2.7/5 score indicates stakeholders perceive significant barriers to scaling, despite high satisfaction (4.5/5 on partner relations).",
-    "Regional imbalance acute: Lindi, Mara, Tanga, Kigoma account for 152 of 173 responses (87.9%); Songwe (8), Mtwara (12), and Singida (1) severely underrepresented."
+    "Teachers dominate respondent pool (101/199, 51%), but critical district/regional education officials remain sparse (6 DEOs, 2 REOs, 1 other region-level). Leadership buy-in signals weak.",
+    "Expansion appetite is clear: 71 respondents prioritise expanding KiuFunza, with 40 flagging policy integration as essential—aligns with sustainability messaging but execution gap evident.",
+    "Scale readiness score of 2.7/5 contradicts expansion demand; suggests respondents want growth but lack confidence in systems/capacity to deliver it.",
+    "Feedback reveals three recurring themes: teacher motivation/incentives, digital monitoring systems, and government policy alignment—operationally specific, not aspirational."
   ],
   "flags": [
-    "Geographic coverage collapse: 3 of 10 target regions have <1 response. Immediate outreach required to Singida, Songwe, and underperforming regions to ensure representative data.",
-    "Scale readiness paradox: Stakeholders want expansion (63) but only rate themselves 2.7/5 ready. Signals unaddressed operational, financial, or policy constraints blocking confidence.",
-    "Data quality variance: Feedback samples show mixed language and incomplete entries. Review data collection protocols to ensure consistency across regions."
+    "Geographic collapse: Songwe (8), Singida (1), and Mtwara (12) combined = 21 responses. Risk of regional bias in findings and weak stakeholder engagement outside core zones.",
+    "Senior official under-representation: Only 6 DEOs and 2 REOs responding. Without district/regional leadership buy-in, policy and scale recommendations will lack credibility.",
+    "Mismatch between aspiration (expand KiuFunza) and confidence (2.7 readiness score): Respondents want growth but doubt organisational capacity—suggests training, resource, or trust deficits."
   ],
-  "recommendation": "Immediately deploy targeted collection blitz to zero/low-response regions (Singida, Songwe, Mtwara) with 2-week sprint; simultaneously conduct 5-10 depth interviews with high-priority respondents to diagnose the readiness gap between expansion demand and confidence levels."
+  "recommendation": "Immediately redirect collection effort to underrepresented regions (Songwe, Singida, Mtwara) and prioritise DEO/REO outreach through regional directors—these voices are essential for credible scaling recommendations. Simultaneously, conduct rapid pulse interviews on the readiness gap to understand barriers behind the 2.7 score before final analysis."
 }
