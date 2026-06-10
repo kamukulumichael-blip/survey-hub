@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-10T19:34:34.032725Z",
+  "generated_at": "2026-06-10T22:02:00.727622Z",
   "total_records": 204,
-  "headline": "Survey at 15% completion; strong regional concentration risks skewing results.",
-  "collection_status": "204 of 1,350 responses collected (15% progress). Lindi dominates with 33% of responses; Songwe, Mtwara, and Singida significantly under-represented. Current pace suggests off-track delivery without intervention.",
+  "headline": "Survey at 15% completion; strong early momentum in 3 regions masks critical geographic gaps.",
+  "collection_status": "204 of 1,350 responses collected (15.1% of target). Collection heavily concentrated in Lindi (33%), Tanga (21%), and Mara (20%), with 7 regions severely underrepresented. At current pace, survey will miss deadline without immediate geographic redistribution of effort.",
   "key_findings": [
-    "Teachers comprise 75% of sample (121/204); senior officials (DEO, REO, ARC) severely under-represented at 4%, limiting district/regional strategic input.",
-    "Expand KiuFunza priority leads with 72 mentions, but scale readiness average of 2.8/5 signals critical implementation gaps despite high enthusiasm.",
-    "Partner satisfaction strong at 4.5/5, but qualitative feedback emphasizes need for sustained teacher incentives, digital monitoring, and government policy integration—not yet reflected in scaled operations.",
-    "Singida (1 response) and Mtwara (12) critically under-resourced; geographic bias toward Lindi-Tanga corridor may miss regional variation in readiness and constraints."
+    "Teacher engagement is strong: 76 lower KiuFunza teachers + 45 head teachers represent 59% of responses, indicating grassroots buy-in.",
+    "Expansion appetite dominates priorities: 72 respondents prioritize expanding KiuFunza (35% of feedback), with secondary emphasis on new programs (46) and policy integration (41).",
+    "Scale readiness score of 2.8/5 signals significant implementation risk despite 4.5/5 partner satisfaction—stakeholders want growth but systems are not yet robust.",
+    "District and regional leadership severely underrepresented: only 27 responses from DEO, REO, REC, and ARC combined, limiting policy-level insights needed for sustainability."
   ],
   "flags": [
-    "Regional imbalance: Lindi + Tanga account for 54% of responses; Songwe, Mtwara, Singida combined = 4.4%. Risk of unrepresentative findings and missed regional voices.",
-    "Senior leadership gap: Only 13 responses from DEO/REO/ARC/REC combined. District and regional coordination priorities unheard; policy scale-up recommendations lack institutional anchoring.",
-    "Scale-readiness paradox: 2.8/5 average suggests implementation barriers (incentives, systems, coordination) undermine expansion ambitions. Feedback cites need for digital systems and inter-agency alignment not yet visible in data."
+    "Geographic coverage crisis: Songwe (13), Mtwara (12), and Singida (1) are drastically below target. Risk of biased findings and weak district buy-in for scaling.",
+    "Scale readiness gap: 2.8/5 score suggests insufficient capacity in systems, monitoring, or training to support expansion priorities—expansion demand outpaces readiness.",
+    "Leadership voice missing: Only 6 DEO + 2 REO responses limits government alignment data critical for policy integration strategy."
   ],
-  "recommendation": "Immediately mobilize targeted collection in under-sampled regions (Songwe, Mtwara, Singida) and launch direct outreach to district/regional officials (target: 80+ DEO/REO/ARC responses). Parallel deep-dive on the 2.8 scale-readiness score to surface implementation blockers before expansion planning proceeds."
+  "recommendation": "Immediately deploy targeted collection teams to Songwe, Mtwara, Singida, and underrepresented districts in active regions. Prioritize DEO and REO interviews (minimum 40 responses) to diagnose scale readiness gaps and anchor policy recommendations before expansion messaging to stakeholders."
 }
