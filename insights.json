@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T04:06:28.428124Z",
-  "total_records": 220,
-  "headline": "Survey at 16% completion; strong regional concentration risks representativeness.",
-  "collection_status": "220 of 1,350 responses collected (16% of target). Lindi dominates with 31% of responses; 8 regions active but uneven distribution. Pace requires acceleration to meet target by deadline.",
+  "generated_at": "2026-06-11T08:59:10.098024Z",
+  "total_records": 226,
+  "headline": "Survey at 17% completion; strong regional concentration risks skewed insights.",
+  "collection_status": "226 of 1,350 responses collected (16.7% of target). LINDI dominates with 30% of all responses; 8 regions active but SINGIDA represents only 0.4% of submissions. Current pace suggests significant acceleration needed to meet 1,350 target.",
   "key_findings": [
-    "Teacher engagement strong: 107/220 (49%) are KiuFunza teachers; head teachers represent 22%, indicating solid core stakeholder participation.",
-    "Expansion priorities clear: 77 respondents prioritize expanding KiuFunza; 48 each want new programs and policy integration—scaling and institutionalization are top asks.",
-    "Scale readiness gap significant: Average readiness score 2.9/5 suggests systems/capacity concerns despite 4.4/5 partner satisfaction, indicating optimism-implementation mismatch.",
-    "Regional imbalance acute: Lindi (68), Tanga (43), Mara (40) account for 77% of responses; Singida (1), Mtwara (12), Songwe (13) severely underrepresented."
+    "Lower primary teachers (83) and head teachers (49) comprise 60% of respondents; upper primary teachers (28), volunteers (25), and district-level officials (23 combined) underrepresented relative to programme footprint.",
+    "Programme expansion is clear priority: 'expand KF' (79 votes) and 'strengthen KF' (45 votes) total 124 responses (55% of top priorities), versus policy/new programmes at 97 combined.",
+    "Scale readiness score of 2.9/5 signals significant infrastructure/capacity gaps despite 4.5/5 partner satisfaction—disconnection between relationship quality and operational preparedness.",
+    "Feedback themes centre on sustained teacher incentives, government policy integration, and digital monitoring systems; limited mention of research or evidence suggests demand-supply mismatch on learning outcomes data."
   ],
   "flags": [
-    "Lindi overweighting risk: 31% concentration may skew findings; urgent need to mobilize collection in Singida, Mtwara, Songwe to ensure regional validity.",
-    "Implementation-readiness disconnect: High satisfaction (4.4) paired with low readiness (2.9) suggests stakeholders lack confidence in operational scaling despite partnership buy-in.",
-    "Research participation negligible: Only 3/220 mention research priority; evidence-based programming may be under-resourced in stakeholder perception."
+    "LINDI overrepresentation (30% of sample) and SINGIDA near-absence (0.4%) risk biasing findings toward one region's context; stratified sampling review urgent.",
+    "Scale readiness 2.9/5 paired with expansion priority suggests stakeholders want growth without confidence in systems to support it—potential implementation risk.",
+    "REO (2), ARC (5), and DEO (6) responses insufficient for district/regional-level strategy validation; deliberate outreach to administrative tier needed."
   ],
-  "recommendation": "Immediately deploy targeted collection drives in underrepresented regions (target 200+ responses from Singida, Mtwara, Songwe, Shinyanga combined). Simultaneously, conduct rapid diagnostic on scale readiness barriers—interview 10-15 respondents scoring <3 to understand systems/resource gaps blocking implementation of expansion priorities."
+  "recommendation": "Immediately audit sampling by region and respondent type against target distribution; redirect collection effort to undersampled regions (SINGIDA, SHINYANGA, SONGWE) and administrative officials. Simultaneously probe the 2.9 scale readiness score in qualitative follow-ups to identify specific bottlenecks before expansion commitments are locked in."
 }
