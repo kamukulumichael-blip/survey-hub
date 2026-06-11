@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T12:52:08.629666Z",
-  "total_records": 248,
-  "headline": "Survey at 18% completion; strong teacher engagement but critical regional and respondent gaps.",
-  "collection_status": "248 of 1,350 responses collected (18.4% of target). Lindi, Mara, and Tanga account for 162 responses (65% of current data); eight regions active but Singida severely underrepresented with only 1 response. Current pace suggests significant catch-up required to meet target.",
+  "generated_at": "2026-06-11T16:54:37.843346Z",
+  "total_records": 299,
+  "headline": "Survey at 22% completion with strong regional imbalance and clear expansion mandate.",
+  "collection_status": "299 of 1,350 responses collected (22.1% of target). Lindi, Mara, and Tanga account for 56% of data. Collection pace insufficient to meet target without acceleration; 10 regions active but Rukwa (5) and Manyara (4) severely underrepresented.",
   "key_findings": [
-    "Teacher-led survey: 88 lower-primary and 33 upper-primary KiuFunza teachers comprise 49% of responses; head teachers add 22%, indicating strong buy-in from classroom level",
-    "Expansion is the priority: 89 respondents want KiuFunza expansion, far exceeding new programs (53) and policy work (53); consolidation (strengthen_kf: 47) ranks fourth",
-    "Partner satisfaction high (4.5/5) but scaling readiness low (2.8/5)—partners support the model but perceive constraints in systems, resources, or capacity",
-    "Feedback signals demand for incentives, digital monitoring, inter-stakeholder communication, government policy integration, and expansion of complementary programs (WiGo, SOMA)"
+    "Stakeholders decisively prioritize expansion: 110 votes for expanding KiuFunza (37% of priorities) vs. 56 for strengthening existing model, signaling appetite for scale.",
+    "Teacher voice dominates (146 of 299; 49%), but critical coverage gaps exist: only 7 Regional Coordinators and 2 REOs across 10 regions limits institutional insight.",
+    "Scale readiness concern: average 2.7/5 suggests stakeholders see significant barriers to growth despite high expansion demand; partner satisfaction strong at 4.4/5.",
+    "Feedback themes converge on three needs: sustained teacher incentives, government policy integration, and digital monitoring systems—actionable priorities for next phase."
   ],
   "flags": [
-    "Regional imbalance: Singida (1), Shinyanga (16), and Songwe (18) lag severely; risk of skewed findings and incomplete regional coverage by survey close",
-    "Respondent skew: Only 2 non-KiuFunza teachers and 1 regional official captured; limited external/comparison perspective and weak regional-level voice in data",
-    "Scale readiness gap: Low readiness score (2.8/5) contradicts high expansion demand (89)—underlying barriers (staffing, funding, systems) not yet articulated in open feedback"
+    "Rukwa and Manyara critically undercollected (<5 responses each); risk of regional blind spots affecting national strategy.",
+    "Scale readiness (2.7/5) substantially lags expansion demand (37% priority votes)—gap indicates resource, system, or capacity constraints not captured in current data.",
+    "Regional coordinator and education officer representation extremely low (9 of 299; 3%)—insufficient for validating district and regional feasibility assumptions."
   ],
-  "recommendation": "Immediately target Singida, Shinyanga, Songwe, and Kigoma with focused field efforts and incentivize regional/district education officers' participation to reach 500+ responses by mid-survey cycle. Concurrently, conduct rapid barrier analysis with 15–20 low-readiness respondents to translate expansion demand into actionable scaling constraints."
+  "recommendation": "Immediately deploy targeted collection to Rukwa, Manyara, and undersampled districts in Singida and Shinyanga; simultaneously schedule structured interviews with 15–20 REOs, RCs, and DEOs to diagnose the scale readiness gap before expansion planning proceeds."
 }
