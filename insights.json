@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T19:35:36.083451Z",
+  "generated_at": "2026-06-11T22:02:24.469720Z",
   "total_records": 299,
-  "headline": "Survey at 22% of target with strong KiuFunza momentum but critical regional gaps.",
-  "collection_status": "299 responses collected against 1,350 target (22.1% completion). Five regions (Lindi, Mara, Tanga, Kigoma, Mtwara) account for 78% of responses; five regions severely underrepresented. Current pace suggests 1,200-1,350 achievable by end of collection period if acceleration begins immediately.",
+  "headline": "Survey at 22% target: strong regional concentration, clear expansion mandate emerging.",
+  "collection_status": "299 responses of 1,350 target (22.1% complete). Collection concentrated in 3 regions (LINDI, MARA, TANGA = 167 responses, 55.9%). Remaining 7 regions significantly under-represented; RUKWA and MANYARA critically low (5 and 4 responses).",
   "key_findings": [
-    "Expansion demand is dominant: 110 respondents (37%) prioritize expanding KiuFunza, with policy integration a close second (60 respondents, 20%), signaling stakeholder confidence in model scalability.",
-    "Teacher cohort is well-represented: 146 KiuFunza teachers (49% of sample) plus 73 head teachers provide credible ground-level feedback; volunteer and WEO participation (53 combined) ensures community perspective.",
-    "Scale readiness score of 2.7/5 contradicts expansion enthusiasm—suggests implementation capacity gaps despite appetite for growth; partner satisfaction (4.4/5) is solid but masking underlying systemic constraints.",
-    "Feedback themes align with data priorities: stakeholders cite need for teacher incentives, digital monitoring, expanded geographic reach, and government policy anchoring—all operationally feasible but resource-dependent."
+    "Expansion dominates stakeholder priorities: 110/299 (36.8%) prioritise expanding KiuFunza, vs. 56 (18.7%) for strengthening existing work—signals strong appetite for scale.",
+    "Teacher engagement solid but concentrated: 106 lower-primary KF teachers responding; head teachers well-represented (73), but only 2 non-KF teachers and 7 regional coordinators suggests limited external buy-in.",
+    "Partner satisfaction high (4.4/5) but scale readiness weak (2.7/5): stakeholders trust the programme but doubt capacity to expand without operational strengthening.",
+    "Feedback emphasises government integration and incentives: recurring themes are policy alignment, teacher motivation schemes, and digital monitoring—not just programme reach."
   ],
   "flags": [
-    "Regional coverage crisis: Rukwa (5), Manyara (4), and Singida (17) are critically undersampled; without targeted mobilization, regional representativeness will be compromised.",
-    "Scale readiness paradox: 2.7/5 readiness score suggests respondents doubt implementation capacity despite high expansion priority—risk of unrealistic commitments without infrastructure investment.",
-    "Research priority collapse: Only 6 respondents (2%) prioritized research despite KiuFunza's evidence-based positioning; indicates potential M&E or learning culture gap."
+    "Geographic imbalance critical: RUKWA and MANYARA severely under-sampled (9 responses combined, <3% of total). Risk survey findings skew toward high-performing regions and mask real implementation barriers.",
+    "Scale readiness-ambition gap: 36.8% want expansion but only 2.7/5 confidence in readiness. Likely indicates stakeholders see opportunity but fear operational collapse without support infrastructure.",
+    "Regional coordinator representation negligible: 7 RCs and 2 REOs among 299 responses. District-level buy-in may be weak; expansion plans risk failure without district ownership."
   ],
-  "recommendation": "Launch immediate regional catch-up campaign in Rukwa, Manyara, Singida, and Shinyanga with targeted partner outreach (target: 350+ responses in next 4 weeks). Simultaneously conduct rapid capacity diagnostic with 15-20 respondents to unpack the 2.7/5 readiness score and translate expansion demand into resource requirements for programme planning."
+  "recommendation": "Immediately intensify data collection in RUKWA, MANYARA, SINGIDA, and SHINYANGA (target 200+ additional responses within 6 weeks). Simultaneously conduct 5-8 rapid qualitative interviews with district and regional officials to diagnose the scale readiness gap and identify non-negotiable operational prerequisites before committing to expansion roadmap."
 }
