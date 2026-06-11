@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T08:59:10.098024Z",
-  "total_records": 226,
-  "headline": "Survey at 17% completion; strong regional concentration risks skewed insights.",
-  "collection_status": "226 of 1,350 responses collected (16.7% of target). LINDI dominates with 30% of all responses; 8 regions active but SINGIDA represents only 0.4% of submissions. Current pace suggests significant acceleration needed to meet 1,350 target.",
+  "generated_at": "2026-06-11T12:52:08.629666Z",
+  "total_records": 248,
+  "headline": "Survey at 18% completion; strong teacher engagement but critical regional and respondent gaps.",
+  "collection_status": "248 of 1,350 responses collected (18.4% of target). Lindi, Mara, and Tanga account for 162 responses (65% of current data); eight regions active but Singida severely underrepresented with only 1 response. Current pace suggests significant catch-up required to meet target.",
   "key_findings": [
-    "Lower primary teachers (83) and head teachers (49) comprise 60% of respondents; upper primary teachers (28), volunteers (25), and district-level officials (23 combined) underrepresented relative to programme footprint.",
-    "Programme expansion is clear priority: 'expand KF' (79 votes) and 'strengthen KF' (45 votes) total 124 responses (55% of top priorities), versus policy/new programmes at 97 combined.",
-    "Scale readiness score of 2.9/5 signals significant infrastructure/capacity gaps despite 4.5/5 partner satisfaction—disconnection between relationship quality and operational preparedness.",
-    "Feedback themes centre on sustained teacher incentives, government policy integration, and digital monitoring systems; limited mention of research or evidence suggests demand-supply mismatch on learning outcomes data."
+    "Teacher-led survey: 88 lower-primary and 33 upper-primary KiuFunza teachers comprise 49% of responses; head teachers add 22%, indicating strong buy-in from classroom level",
+    "Expansion is the priority: 89 respondents want KiuFunza expansion, far exceeding new programs (53) and policy work (53); consolidation (strengthen_kf: 47) ranks fourth",
+    "Partner satisfaction high (4.5/5) but scaling readiness low (2.8/5)—partners support the model but perceive constraints in systems, resources, or capacity",
+    "Feedback signals demand for incentives, digital monitoring, inter-stakeholder communication, government policy integration, and expansion of complementary programs (WiGo, SOMA)"
   ],
   "flags": [
-    "LINDI overrepresentation (30% of sample) and SINGIDA near-absence (0.4%) risk biasing findings toward one region's context; stratified sampling review urgent.",
-    "Scale readiness 2.9/5 paired with expansion priority suggests stakeholders want growth without confidence in systems to support it—potential implementation risk.",
-    "REO (2), ARC (5), and DEO (6) responses insufficient for district/regional-level strategy validation; deliberate outreach to administrative tier needed."
+    "Regional imbalance: Singida (1), Shinyanga (16), and Songwe (18) lag severely; risk of skewed findings and incomplete regional coverage by survey close",
+    "Respondent skew: Only 2 non-KiuFunza teachers and 1 regional official captured; limited external/comparison perspective and weak regional-level voice in data",
+    "Scale readiness gap: Low readiness score (2.8/5) contradicts high expansion demand (89)—underlying barriers (staffing, funding, systems) not yet articulated in open feedback"
   ],
-  "recommendation": "Immediately audit sampling by region and respondent type against target distribution; redirect collection effort to undersampled regions (SINGIDA, SHINYANGA, SONGWE) and administrative officials. Simultaneously probe the 2.9 scale readiness score in qualitative follow-ups to identify specific bottlenecks before expansion commitments are locked in."
+  "recommendation": "Immediately target Singida, Shinyanga, Songwe, and Kigoma with focused field efforts and incentivize regional/district education officers' participation to reach 500+ responses by mid-survey cycle. Concurrently, conduct rapid barrier analysis with 15–20 low-readiness respondents to translate expansion demand into actionable scaling constraints."
 }
