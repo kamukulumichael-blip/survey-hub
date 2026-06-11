@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-11T16:54:37.843346Z",
+  "generated_at": "2026-06-11T19:35:36.083451Z",
   "total_records": 299,
-  "headline": "Survey at 22% completion with strong regional imbalance and clear expansion mandate.",
-  "collection_status": "299 of 1,350 responses collected (22.1% of target). Lindi, Mara, and Tanga account for 56% of data. Collection pace insufficient to meet target without acceleration; 10 regions active but Rukwa (5) and Manyara (4) severely underrepresented.",
+  "headline": "Survey at 22% of target with strong KiuFunza momentum but critical regional gaps.",
+  "collection_status": "299 responses collected against 1,350 target (22.1% completion). Five regions (Lindi, Mara, Tanga, Kigoma, Mtwara) account for 78% of responses; five regions severely underrepresented. Current pace suggests 1,200-1,350 achievable by end of collection period if acceleration begins immediately.",
   "key_findings": [
-    "Stakeholders decisively prioritize expansion: 110 votes for expanding KiuFunza (37% of priorities) vs. 56 for strengthening existing model, signaling appetite for scale.",
-    "Teacher voice dominates (146 of 299; 49%), but critical coverage gaps exist: only 7 Regional Coordinators and 2 REOs across 10 regions limits institutional insight.",
-    "Scale readiness concern: average 2.7/5 suggests stakeholders see significant barriers to growth despite high expansion demand; partner satisfaction strong at 4.4/5.",
-    "Feedback themes converge on three needs: sustained teacher incentives, government policy integration, and digital monitoring systems—actionable priorities for next phase."
+    "Expansion demand is dominant: 110 respondents (37%) prioritize expanding KiuFunza, with policy integration a close second (60 respondents, 20%), signaling stakeholder confidence in model scalability.",
+    "Teacher cohort is well-represented: 146 KiuFunza teachers (49% of sample) plus 73 head teachers provide credible ground-level feedback; volunteer and WEO participation (53 combined) ensures community perspective.",
+    "Scale readiness score of 2.7/5 contradicts expansion enthusiasm—suggests implementation capacity gaps despite appetite for growth; partner satisfaction (4.4/5) is solid but masking underlying systemic constraints.",
+    "Feedback themes align with data priorities: stakeholders cite need for teacher incentives, digital monitoring, expanded geographic reach, and government policy anchoring—all operationally feasible but resource-dependent."
   ],
   "flags": [
-    "Rukwa and Manyara critically undercollected (<5 responses each); risk of regional blind spots affecting national strategy.",
-    "Scale readiness (2.7/5) substantially lags expansion demand (37% priority votes)—gap indicates resource, system, or capacity constraints not captured in current data.",
-    "Regional coordinator and education officer representation extremely low (9 of 299; 3%)—insufficient for validating district and regional feasibility assumptions."
+    "Regional coverage crisis: Rukwa (5), Manyara (4), and Singida (17) are critically undersampled; without targeted mobilization, regional representativeness will be compromised.",
+    "Scale readiness paradox: 2.7/5 readiness score suggests respondents doubt implementation capacity despite high expansion priority—risk of unrealistic commitments without infrastructure investment.",
+    "Research priority collapse: Only 6 respondents (2%) prioritized research despite KiuFunza's evidence-based positioning; indicates potential M&E or learning culture gap."
   ],
-  "recommendation": "Immediately deploy targeted collection to Rukwa, Manyara, and undersampled districts in Singida and Shinyanga; simultaneously schedule structured interviews with 15–20 REOs, RCs, and DEOs to diagnose the scale readiness gap before expansion planning proceeds."
+  "recommendation": "Launch immediate regional catch-up campaign in Rukwa, Manyara, Singida, and Shinyanga with targeted partner outreach (target: 350+ responses in next 4 weeks). Simultaneously conduct rapid capacity diagnostic with 15-20 respondents to unpack the 2.7/5 readiness score and translate expansion demand into resource requirements for programme planning."
 }
