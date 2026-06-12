@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T09:42:15.299123Z",
-  "total_records": 305,
-  "headline": "Survey at 23% target with strong teacher engagement but uneven regional coverage.",
-  "collection_status": "305 responses collected against 1,350 target puts you at pace for ~914 total by end of cycle—22.6% shortfall. Lindi, Mara, and Tanga account for 58% of responses; Rukwa and Manyara critically underrepresented with only 9 combined responses.",
+  "generated_at": "2026-06-12T12:53:30.710378Z",
+  "total_records": 335,
+  "headline": "Survey at 25% target with strong teacher engagement but uneven regional coverage.",
+  "collection_status": "335 of 1,350 responses collected (24.8% of target). Data concentration in Lindi (21%) and Mara (19%) suggests geographic clustering. Pace requires acceleration to meet deadline; Rukwa (5 responses) and Manyara (13) critically underrepresented.",
   "key_findings": [
-    "Teacher cohort dominates (150/305; 49%)—lower primary KiuFunza teachers drive bulk participation. Head teachers (74) provide institutional perspective but non-KiuFunza teachers (2) and regional officials (3) underrepresented.",
-    "Expand KiuFunza (112) and launch new programs (64) are overwhelming priorities (58% of all responses), signalling appetite for scaling. Policy integration (60) ranks third, indicating stakeholders see sustainability risk.",
-    "Partner satisfaction strong at 4.4/5 but scale readiness weak at 2.8/5—gap suggests confidence in current work doesn't translate to confidence in expansion capacity.",
-    "Feedback themes: incentivise teachers, expand to new schools/districts, formalise KiuFunza in education policy, digitise monitoring. Limited evidence of systemic barriers or resistance."
+    "KiuFunza expansion dominates priorities (116/335 mentions, 35%), followed by policy integration (74, 22%) and new programs (71, 21%)—clear mandate for scaling existing model.",
+    "Lower primary teachers comprise 37% of responses; head teachers 25%—ground-level implementers and school leaders well-represented, but regional officials (REO, ARC, DEC combined = 13) severely undersampled.",
+    "Partner satisfaction high at 4.4/5, but scale readiness low at 2.8/5—stakeholders value relationship but express capacity concerns for expansion across 10 regions.",
+    "Feedback themes emphasize incentives, digital monitoring, government coordination, and WiGo/SOMA rollout—operational and sustainability issues driving stakeholder anxiety."
   ],
   "flags": [
-    "Regional coverage collapse: Rukwa (5) and Manyara (4) at 1-2% of target. Immediate field audit required to diagnose access, stakeholder mapping, or implementation gaps.",
-    "Scale readiness (2.8/5) contradicts expansion appetite (112 votes). Without operationalised readiness plan, scaling risks quality dilution and partner burnout.",
-    "Respondent type skew: 74% are teachers/head teachers; district/regional officials represent <4%. Missing perspectives from budget holders and policy gatekeepers needed to unlock policy priority."
+    "Geographic imbalance: Lindi, Mara, Tanga account for 47% of responses. Rukwa critically undersampled (5 responses); requires urgent targeted outreach to avoid skewed analysis.",
+    "District/regional official representation at 4.2% (14/335)—policy-level stakeholders under-captured; risks missing critical government alignment insights.",
+    "Scale readiness gap: 4.4/5 satisfaction vs. 2.8/5 readiness indicates stakeholders trust model but doubt operationalization capacity at scale—unaddressed tension."
   ],
-  "recommendation": "Redirect 40% of collection effort to Rukwa and Manyara immediately—conduct rapid stakeholder stocktake and barrier analysis. In parallel, commission focused scale readiness assessment with 30-40 respondents across all regions to convert the policy momentum into actionable capacity roadmap before next quarter."
+  "recommendation": "Immediately deploy targeted mobilization to Rukwa, Manyara, Singida, and Songwe (combined 57 responses vs. target ~270). Simultaneously, prioritize 20+ interviews with district and regional education officials (DEO, REO, ARC) to validate government co-investment assumptions underlying expansion priority #1."
 }
