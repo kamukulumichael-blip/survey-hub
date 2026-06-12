@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T05:13:48.109383Z",
-  "total_records": 299,
-  "headline": "Survey at 22% completion; strong teacher engagement but regional and geographic gaps emerging.",
-  "collection_status": "299 of 1,350 responses collected (22% of target). Collection concentrated in 3 regions (Lindi, Mara, Tanga = 167 responses, 56% of total). Pace requires acceleration across remaining 7 regions, particularly Rukwa (5) and Manyara (4) which are critically underrepresented.",
+  "generated_at": "2026-06-12T09:42:15.299123Z",
+  "total_records": 305,
+  "headline": "Survey at 23% target with strong teacher engagement but uneven regional coverage.",
+  "collection_status": "305 responses collected against 1,350 target puts you at pace for ~914 total by end of cycle—22.6% shortfall. Lindi, Mara, and Tanga account for 58% of responses; Rukwa and Manyara critically underrepresented with only 9 combined responses.",
   "key_findings": [
-    "Teacher respondents dominate (146 of 299, 49%), validating grassroots engagement; head teachers (73, 24%) provide institutional perspective but volunteers (31, 10%) and district officials (39, 13%) suggest weak system-level buy-in.",
-    "Expansion and new programs are top priorities (174 responses, 58%), indicating stakeholders see growth opportunity; however, scale readiness is low (2.7/5), signaling capacity constraints must be addressed before expansion.",
-    "Partner satisfaction strong at 4.4/5, but qualitative feedback reveals fragmented implementation: requests focus on incentives, digital monitoring, inter-stakeholder communication, and government policy integration—operational maturity gaps not reflected in satisfaction scores.",
-    "Regional imbalance risks skewed findings: Lindi + Mara represent 40% of responses but only 20% of target regions; Rukwa and Manyara near-absent, threatening representativeness."
+    "Teacher cohort dominates (150/305; 49%)—lower primary KiuFunza teachers drive bulk participation. Head teachers (74) provide institutional perspective but non-KiuFunza teachers (2) and regional officials (3) underrepresented.",
+    "Expand KiuFunza (112) and launch new programs (64) are overwhelming priorities (58% of all responses), signalling appetite for scaling. Policy integration (60) ranks third, indicating stakeholders see sustainability risk.",
+    "Partner satisfaction strong at 4.4/5 but scale readiness weak at 2.8/5—gap suggests confidence in current work doesn't translate to confidence in expansion capacity.",
+    "Feedback themes: incentivise teachers, expand to new schools/districts, formalise KiuFunza in education policy, digitise monitoring. Limited evidence of systemic barriers or resistance."
   ],
   "flags": [
-    "Collection pace (299 in current cycle) must accelerate 4.5x to meet 1,350 target by deadline; Rukwa and Manyara collection critical to avoid regional bias.",
-    "Scale readiness (2.7/5) contradicts expansion priority sentiment (110 responses); risk of committing to growth without operational foundation.",
-    "Qualitative feedback suggests implementation inconsistency (monitoring, incentives, communication) despite high satisfaction—potential measurement gap or satisfaction driven by engagement rather than outcomes."
+    "Regional coverage collapse: Rukwa (5) and Manyara (4) at 1-2% of target. Immediate field audit required to diagnose access, stakeholder mapping, or implementation gaps.",
+    "Scale readiness (2.8/5) contradicts expansion appetite (112 votes). Without operationalised readiness plan, scaling risks quality dilution and partner burnout.",
+    "Respondent type skew: 74% are teachers/head teachers; district/regional officials represent <4%. Missing perspectives from budget holders and policy gatekeepers needed to unlock policy priority."
   ],
-  "recommendation": "Immediately deploy targeted collection blitz in Rukwa, Manyara, and undersampled districts (Singida, Shinyanga); simultaneously commission rapid diagnostic on scale readiness barriers to align expansion ambitions with operational capacity. Both are critical to avoid biased findings and flawed strategy."
+  "recommendation": "Redirect 40% of collection effort to Rukwa and Manyara immediately—conduct rapid stakeholder stocktake and barrier analysis. In parallel, commission focused scale readiness assessment with 30-40 respondents across all regions to convert the policy momentum into actionable capacity roadmap before next quarter."
 }
