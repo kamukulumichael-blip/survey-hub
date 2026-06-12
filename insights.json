@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T22:24:54.535791Z",
+  "generated_at": "2026-06-12T23:59:45.306428Z",
   "total_records": 393,
-  "headline": "Survey at 29% completion; strong regional coverage but scaling readiness lags partnership satisfaction.",
-  "collection_status": "393 of 1,350 responses collected (29% progress). All 10 target regions active with Lindi, Mara, and Tanga leading (186 responses combined). Collection pace must accelerate 4.4x to meet target by survey close.",
+  "headline": "29% target completion with strong KF expansion demand; geographic concentration risk emerging.",
+  "collection_status": "393 of 1,350 responses (29%) collected. Lindi and Mara dominate with 134 responses (34% of total). Pace requires acceleration: at current rate, full target not achievable without intensified regional push in underperforming zones.",
   "key_findings": [
-    "KiuFunza expansion dominates priorities (139/393, 35%), followed by new programs (92) and policy integration (83), signaling strong demand for scale but weak institutional readiness (2.7/5).",
-    "Teacher respondents comprise 84% of sample (153 lower + 54 upper KF + 4 non-KF), but district/regional officials severely underrepresented (15 of 393, 4%)—risking policy-level insight gaps.",
-    "Partner satisfaction high (4.4/5) yet scale readiness critically low (2.7/5)—suggests stakeholders trust LearnImpact but doubt systems/capacity for expansion; feedback emphasizes need for teacher incentives, digital monitoring, and government coordination.",
-    "Rukwa region lags significantly (9 responses vs. regional average 39)—requires urgent targeted mobilization or risks skewing national-level analysis."
+    "KF expansion is dominant priority (139/393, 35% of sample) with new programs (92) and policy integration (83) as secondary drivers—stakeholders want scale, not consolidation.",
+    "Teacher respondents represent 85% of sample (211/393), heavily weighted toward KF lower grades (153). Head teacher engagement strong but DEO/REO/REC participation critically thin (15 combined).",
+    "Rukwa (9), Singida (25), and Songwe (29) severely underrepresented; Rukwa at 2.7% of target. Geographic skew risks biased priority data and weak district-level buy-in.",
+    "Partner satisfaction high (4.4/5) but scale readiness low (2.7/5)—stakeholders want expansion but doubt organizational/system capacity to deliver."
   ],
   "flags": [
-    "Scale readiness (2.7/5) vs. expansion demand mismatch: 139 respondents want KF expansion but survey data doesn't reflect readiness assessment granularity; immediate gap analysis needed.",
-    "District and regional official undersampling (4%): ARCs, REOs, DEOs, and RCs severely underrepresented; policy translation risk if leadership voice remains weak in final dataset.",
-    "Rukwa region critical lag: 9 responses vs. 70 in Lindi; without urgent mobilization, regional representation will be skewed and sub-national insights compromised."
+    "District and regional official engagement critically weak (15 respondents across DEO, REC, REC, REO roles). Without these gatekeepers, policy and implementation risk remains high.",
+    "Rukwa, Singida, and Songwe combined represent only 63 responses (16% of current total). Must surge collection in these three regions or risk regional validity and representation.",
+    "Low scale readiness (2.7/5) against high expansion demand signals potential disconnect between stakeholder ambitions and program readiness—risk of over-commitment."
   ],
-  "recommendation": "Immediately deploy targeted mobilization to Rukwa and undersampled regions (Singida, Songwe) plus dedicated outreach to district/regional officials (DEOs, ARCs, REOs) to secure 60+ additional responses by next collection cycle. Simultaneously, conduct rapid scale-readiness diagnostic with top 50 respondents to translate demand into implementation barriers."
+  "recommendation": "Immediately deploy targeted collection teams to Rukwa (priority 1), Singida, and Songwe with explicit DEO/REC quotas. Simultaneously, conduct rapid capacity assessment against expansion priorities to bridge 4.4/2.7 satisfaction-readiness gap before scaling commitments."
 }
