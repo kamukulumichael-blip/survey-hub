@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T00:01:17.381530Z",
+  "generated_at": "2026-06-12T05:13:48.109383Z",
   "total_records": 299,
-  "headline": "Survey at 22% completion with strong regional concentration; scaling urgency evident.",
-  "collection_status": "299 of 1,350 responses collected (22.1% progress). Geographic coverage uneven: Lindi, Mara, and Tanga account for 56% of responses while Rukwa and Manyara critically underrepresented (9 combined). Respondent base heavily weighted toward teachers (146/299, 49%) with limited district/regional official engagement (14/299, 5%).",
+  "headline": "Survey at 22% completion; strong teacher engagement but regional and geographic gaps emerging.",
+  "collection_status": "299 of 1,350 responses collected (22% of target). Collection concentrated in 3 regions (Lindi, Mara, Tanga = 167 responses, 56% of total). Pace requires acceleration across remaining 7 regions, particularly Rukwa (5) and Manyara (4) which are critically underrepresented.",
   "key_findings": [
-    "Expansion is the dominant priority: 110 stakeholders prioritize expanding KiuFunza, with new programs (64) and policy integration (60) following. Research interest minimal (6), suggesting focus on implementation over evaluation.",
-    "Partner satisfaction strong (4.4/5) but scale readiness concerning (2.7/5): stakeholders are satisfied but express low confidence in operational capacity to expand effectively.",
-    "Feedback consistently emphasizes government partnership, teacher incentives, and digital monitoring as prerequisites for scaling—strategic policy alignment is non-negotiable, not optional.",
-    "Severe underrepresentation of district and regional education officers (12 responses vs. expected 25%+ of target): critical stakeholders undersampled, limiting buy-in data for scaling decisions."
+    "Teacher respondents dominate (146 of 299, 49%), validating grassroots engagement; head teachers (73, 24%) provide institutional perspective but volunteers (31, 10%) and district officials (39, 13%) suggest weak system-level buy-in.",
+    "Expansion and new programs are top priorities (174 responses, 58%), indicating stakeholders see growth opportunity; however, scale readiness is low (2.7/5), signaling capacity constraints must be addressed before expansion.",
+    "Partner satisfaction strong at 4.4/5, but qualitative feedback reveals fragmented implementation: requests focus on incentives, digital monitoring, inter-stakeholder communication, and government policy integration—operational maturity gaps not reflected in satisfaction scores.",
+    "Regional imbalance risks skewed findings: Lindi + Mara represent 40% of responses but only 20% of target regions; Rukwa and Manyara near-absent, threatening representativeness."
   ],
   "flags": [
-    "Rukwa (5) and Manyara (4) responses critically low; risk survey conclusions skew toward Lindi-Mara-Tanga contexts and mask regional variation.",
-    "REOs, DEs, and ARC involvement insufficient (11 responses combined); without strong district/regional voice, scaling recommendations will lack implementation credibility.",
-    "Scale readiness (2.7/5) vs. expansion demand mismatch: stakeholders want rapid growth but signal weak operational readiness—risk of overcommitment."
+    "Collection pace (299 in current cycle) must accelerate 4.5x to meet 1,350 target by deadline; Rukwa and Manyara collection critical to avoid regional bias.",
+    "Scale readiness (2.7/5) contradicts expansion priority sentiment (110 responses); risk of committing to growth without operational foundation.",
+    "Qualitative feedback suggests implementation inconsistency (monitoring, incentives, communication) despite high satisfaction—potential measurement gap or satisfaction driven by engagement rather than outcomes."
   ],
-  "recommendation": "Immediately intensify collection in Rukwa, Manyara, and underrepresented western regions via targeted email/phone campaigns to district education officers and DEs. Simultaneously conduct 8-10 rapid phone interviews with DEOs/REOs to bridge the 1,051-response gap and validate scaling assumptions before July milestone decisions."
+  "recommendation": "Immediately deploy targeted collection blitz in Rukwa, Manyara, and undersampled districts (Singida, Shinyanga); simultaneously commission rapid diagnostic on scale readiness barriers to align expansion ambitions with operational capacity. Both are critical to avoid biased findings and flawed strategy."
 }
