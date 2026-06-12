@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T12:53:30.710378Z",
-  "total_records": 335,
-  "headline": "Survey at 25% target with strong teacher engagement but uneven regional coverage.",
-  "collection_status": "335 of 1,350 responses collected (24.8% of target). Data concentration in Lindi (21%) and Mara (19%) suggests geographic clustering. Pace requires acceleration to meet deadline; Rukwa (5 responses) and Manyara (13) critically underrepresented.",
+  "generated_at": "2026-06-12T16:17:36.342709Z",
+  "total_records": 365,
+  "headline": "27% target achieved; strong teacher engagement masks uneven regional coverage and scaling readiness gaps.",
+  "collection_status": "365 of 1,350 responses collected (27% of target). Data quality is solid with 10 of 10 regions represented. Current trajectory suggests 730–850 responses by survey close if pace holds; significant acceleration needed to reach target.",
   "key_findings": [
-    "KiuFunza expansion dominates priorities (116/335 mentions, 35%), followed by policy integration (74, 22%) and new programs (71, 21%)—clear mandate for scaling existing model.",
-    "Lower primary teachers comprise 37% of responses; head teachers 25%—ground-level implementers and school leaders well-represented, but regional officials (REO, ARC, DEC combined = 13) severely undersampled.",
-    "Partner satisfaction high at 4.4/5, but scale readiness low at 2.8/5—stakeholders value relationship but express capacity concerns for expansion across 10 regions.",
-    "Feedback themes emphasize incentives, digital monitoring, government coordination, and WiGo/SOMA rollout—operational and sustainability issues driving stakeholder anxiety."
+    "Teacher voices dominate (190 of 365; 52%): KiuFunza lower-primary teachers are primary respondents, validating classroom-level insights but limiting district/regional leadership perspective.",
+    "Expansion appetite is clear: 126 respondents (35%) prioritize KiuFunza expansion; policy integration (81) and new programs (80) signal readiness to scale if systems support it.",
+    "Critical scaling gap: average scale readiness is 2.7/5—stakeholders want growth but perceive weak infrastructure, digital tracking, and government coordination to enable it.",
+    "Geographic concentration risk: Lindi (70), Mara (64), and Tanga (52) account for 51% of responses; Rukwa (5), Singida (17), and Songwe (22) are severely underrepresented, limiting rural and remote insights."
   ],
   "flags": [
-    "Geographic imbalance: Lindi, Mara, Tanga account for 47% of responses. Rukwa critically undersampled (5 responses); requires urgent targeted outreach to avoid skewed analysis.",
-    "District/regional official representation at 4.2% (14/335)—policy-level stakeholders under-captured; risks missing critical government alignment insights.",
-    "Scale readiness gap: 4.4/5 satisfaction vs. 2.8/5 readiness indicates stakeholders trust model but doubt operationalization capacity at scale—unaddressed tension."
+    "Scale readiness (2.7/5) is half partner satisfaction (4.4/5)—confidence in KiuFunza does not translate to belief in ability to grow it; investigate blockers in policy, staffing, and monitoring.",
+    "Regional imbalance threatens representativeness: Rukwa and Singida are critically low; Songwe and Shinyanga lag; without targeted pushes in these zones, insights will skew toward Lindi/Mara/Tanga ecosystems.",
+    "District/regional leadership undersampled: only 17 DEO, ARC, REO, and district-official respondents combined; survey risks missing critical system-level constraints on scaling."
   ],
-  "recommendation": "Immediately deploy targeted mobilization to Rukwa, Manyara, Singida, and Songwe (combined 57 responses vs. target ~270). Simultaneously, prioritize 20+ interviews with district and regional education officials (DEO, REO, ARC) to validate government co-investment assumptions underlying expansion priority #1."
+  "recommendation": "Immediately launch targeted collection in Rukwa (5→30), Singida (17→40), and Songwe (22→35) to achieve geographic balance. Simultaneously, deploy district/regional officer intake campaign (target +25 DEO/REO/ARC responses) to surface policy and infrastructure barriers blocking the 2.7 scale-readiness score."
 }
