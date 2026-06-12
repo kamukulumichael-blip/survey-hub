@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T20:34:47.978122Z",
+  "generated_at": "2026-06-12T22:24:54.535791Z",
   "total_records": 393,
-  "headline": "29% target met; strong teacher engagement but regional coverage gaps emerging.",
-  "collection_status": "393 of 1,350 responses collected (29%). Lindi and Mara regions leading (134 responses combined). Rukwa critically underrepresented at 9 responses; five regions below 35 responses each, indicating uneven rollout requiring acceleration.",
+  "headline": "Survey at 29% completion; strong regional coverage but scaling readiness lags partnership satisfaction.",
+  "collection_status": "393 of 1,350 responses collected (29% progress). All 10 target regions active with Lindi, Mara, and Tanga leading (186 responses combined). Collection pace must accelerate 4.4x to meet target by survey close.",
   "key_findings": [
-    "Teacher-led momentum: 201 of 393 (51%) are KiuFunza teachers (lower and upper), validating implementation credibility and grassroots buy-in.",
-    "Expansion appetite dominates: 139 respondents (35%) prioritise expanding KiuFunza; policy integration ranks third (83), indicating stakeholders see scale as prerequisite to sustainability.",
-    "Scale readiness gap: Average 2.7/5 readiness score signals operational bottlenecks despite 4.4/5 partner satisfaction—systems and capacity lag strategy appetite.",
-    "Qualitative signals consistent: Feedback emphasises teacher incentives, digital monitoring, government partnership, and programme expansion—aligns with quantitative priorities but reveals resource/sustainability concerns."
+    "KiuFunza expansion dominates priorities (139/393, 35%), followed by new programs (92) and policy integration (83), signaling strong demand for scale but weak institutional readiness (2.7/5).",
+    "Teacher respondents comprise 84% of sample (153 lower + 54 upper KF + 4 non-KF), but district/regional officials severely underrepresented (15 of 393, 4%)—risking policy-level insight gaps.",
+    "Partner satisfaction high (4.4/5) yet scale readiness critically low (2.7/5)—suggests stakeholders trust LearnImpact but doubt systems/capacity for expansion; feedback emphasizes need for teacher incentives, digital monitoring, and government coordination.",
+    "Rukwa region lags significantly (9 responses vs. regional average 39)—requires urgent targeted mobilization or risks skewing national-level analysis."
   ],
   "flags": [
-    "Regional imbalance: Rukwa (9), Singida (25), Songwe (29) severely undersampled; risk of skewed findings and unrepresentative policy input from southern/western zones.",
-    "Scale readiness 2.7/5 is critical: High expansion demand paired with low operational readiness suggests respondents want growth without believing systems can support it—implementation risk.",
-    "Respondent type skew: 153 lower-primary teachers dominate; only 6 DEOs and 2 REOs suggest weak district/regional authority engagement, limiting buy-in for scaling."
+    "Scale readiness (2.7/5) vs. expansion demand mismatch: 139 respondents want KF expansion but survey data doesn't reflect readiness assessment granularity; immediate gap analysis needed.",
+    "District and regional official undersampling (4%): ARCs, REOs, DEOs, and RCs severely underrepresented; policy translation risk if leadership voice remains weak in final dataset.",
+    "Rukwa region critical lag: 9 responses vs. 70 in Lindi; without urgent mobilization, regional representation will be skewed and sub-national insights compromised."
   ],
-  "recommendation": "Immediately intensify collection in Rukwa, Singida, Songwe, and Manyara via targeted phone surveys and regional field visits (target +200 responses in 2 weeks). Simultaneously conduct rapid diagnostic with DEOs/REOs on scale readiness barriers—prioritise this over pursuit of 1,350 target until operational bottlenecks are mapped."
+  "recommendation": "Immediately deploy targeted mobilization to Rukwa and undersampled regions (Singida, Songwe) plus dedicated outreach to district/regional officials (DEOs, ARCs, REOs) to secure 60+ additional responses by next collection cycle. Simultaneously, conduct rapid scale-readiness diagnostic with top 50 respondents to translate demand into implementation barriers."
 }
