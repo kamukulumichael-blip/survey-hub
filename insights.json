@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T10:56:51.331879Z",
-  "total_records": 424,
-  "headline": "Survey at 31% completion; strong early engagement but scale readiness concerning.",
-  "collection_status": "424 responses collected against 1,350 target (31% progress). Regional coverage uneven: Lindi and Mara dominate (37% of responses) while Rukwa, Singida, and Songwe underrepresented. Pace suggests 2-3 weeks needed to reach target at current rate.",
+  "generated_at": "2026-06-13T12:28:10.025560Z",
+  "total_records": 434,
+  "headline": "Survey at 32% completion with strong teacher engagement but uneven regional coverage.",
+  "collection_status": "434 responses collected against 1,350 target (32% complete). Lindi and Mara dominate with 167 of 434 responses (38%), while Rukwa contributes only 12 (3%). Current pace suggests 3–4 months needed to reach target if momentum holds.",
   "key_findings": [
-    "Teacher cohort (KF lower, upper, non-KF) represents 58% of responses; head teachers 23%—good school-level penetration but limited district/regional official input (only 6% combined).",
-    "Expansion priorities crystal clear: 153 favour expand_kf, 98 new_programs, 89 policy—80% consensus on growth over strengthening (70 votes).",
-    "Critical gap: scale readiness 2.7/5.0 vs partner satisfaction 4.4/5.0—stakeholders satisfied but perceive low institutional readiness for expansion.",
-    "Qualitative feedback emphasizes teacher incentives, government policy integration, and digital monitoring—expansion without teacher support will stall."
+    "Teacher participation robust: 174 lower-primary and 59 upper-primary KF teachers comprise 53% of sample, plus 103 head teachers ensure school-level perspective.",
+    "Expansion dominates priorities: 155 respondents (36%) prioritise expanding KF vs 73 (17%) for strengthening existing work, signalling appetite for scale over consolidation.",
+    "Scale readiness gap critical: Average 2.7/5 readiness score contrasts sharply with 4.4/5 partner satisfaction, indicating stakeholders want growth but doubt operational capacity.",
+    "Policy integration emerging: 89 responses (20%) emphasize policy alignment and government collaboration, reflected in Swahili feedback on embedding KF in national education strategy."
   ],
   "flags": [
-    "Scale readiness 2.7/5.0 is red: 47% response gap and low readiness suggest expansion push will face implementation barriers if not addressed.",
-    "Regional imbalance critical: Rukwa (12), Singida (25), Songwe (29) severely underrepresented; risk of biased findings and weak regional buy-in.",
-    "Official district/regional engagement weak (12 responses total); expansion requires policy champions—urgently need DED, RED, and arc engagement."
+    "Regional imbalance: Rukwa, Songwe, and Singida underrepresented (<30 responses each); risk incomplete picture of northern/western needs.",
+    "Readiness-ambition mismatch: Scale readiness (2.7) insufficient to deliver expansion priority (155 votes); operational bottlenecks likely unaddressed.",
+    "Low senior official voices: Only 8 regional/district education officers (RC, DEO, ARC, REO, DRO combined) vs 174 teachers; decision-maker perspective thin."
   ],
-  "recommendation": "Immediately launch targeted outreach to underrepresented regions (Rukwa, Singida, Songwe) and priority recruitment of district/regional officials (DED, RED, ARC) to reach 60% coverage within 10 days. Parallel action: conduct rapid readiness diagnostic with 20-30 head teachers and officials to unblock the 2.7 scale readiness gap before finalizing expansion strategy."
+  "recommendation": "Immediately intensify collection in underrepresented regions (target 50+ responses each in Rukwa, Songwe, Singida) and deliberately sample 15–20 additional district/regional officials to validate scale readiness constraints. Use next 4 weeks to close the regional-leadership gap before final analysis."
 }
