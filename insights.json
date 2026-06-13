@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T14:39:36.776043Z",
-  "total_records": 458,
-  "headline": "33% of target responses collected; strong regional spread but scale readiness concerns.",
-  "collection_status": "458 of 1,350 responses (34%) secured across all 10 regions. Lindi, Mara, and Tanga account for 47% of current data. Collection pace supports on-time completion if momentum holds; mid-survey acceleration needed to close 892-response gap by deadline.",
+  "generated_at": "2026-06-13T16:13:16.704453Z",
+  "total_records": 464,
+  "headline": "34% target achieved; strong teacher engagement masks critical regional gaps and scale readiness concerns.",
+  "collection_status": "464 of 1,350 responses collected (34% completion). Lindi and Mara dominate with 167 combined responses (36% of total). Nine regions below 50 responses; Rukwa critically underrepresented at 17. Current pace insufficient to meet target without accelerated collection.",
   "key_findings": [
-    "KiuFunza expansion dominates priorities (36% of responses), with 165 stakeholders backing expansion over strengthening existing work (73 responses).",
-    "Teacher engagement strong: 248 KiuFunza teachers + 109 head teachers represent 78% of respondents; volunteer and WEO participation balanced at 34 each.",
-    "Satisfaction-readiness gap flagged: 4.4/5 partner satisfaction contrasts sharply with 2.8/5 scale readiness, suggesting enthusiasm without operational confidence.",
-    "Feedback reveals three actionable demands: sustained teacher incentives, digital monitoring systems, and policy integration—not just programme expansion."
+    "Teacher cohort represents 79% of responses (451/464), heavily skewed toward lower primary (41% of sample). Leadership voices (heads, WEO, district officials) significantly underweighted—only 164 responses (35%).",
+    "Expansion priority dominates: 168 respondents (36%) prioritize expanding KiuFunza; 113 (24%) demand new programs. Only 73 (16%) focus on strengthening existing implementation—signals appetite exceeds capacity.",
+    "Scale readiness deeply misaligned with ambition: mean score 2.7/5 indicates stakeholders perceive moderate-to-low organizational readiness, yet 60% of priorities assume scaled delivery and policy integration.",
+    "Regional concentration risk: Lindi (19% of total) and top-4 regions account for 279/464 (60%). Shinyanga, Songwe, Singida, Rukwa collectively represent only 104 responses—insufficient for regional strategy validation."
   ],
   "flags": [
-    "Scale readiness 2.8/5 indicates stakeholders lack confidence in scaling infrastructure; risk of expansion commitments without institutional foundation.",
-    "Underrepresentation of district/regional officials (DEO, REO, ARC, REC = 24 responses): essential policy voices under-captured; skews sample toward school-level perspectives.",
-    "Lindi-Mara concentration (167/458, 36%): uneven regional distribution may mask Rukwa (15), Singida (25), Songwe (29) specific barriers; validate coverage balance."
+    "Scale readiness-ambition gap: Stakeholders want expansion (61% of priorities) but assess readiness at 2.7/5. Immediate diagnostic needed on capacity constraints before committing to scaling promises.",
+    "Leadership underrepresentation: Only 164 policy-facing respondents (WEO, DEO, REC, ARC, REO, district officials combined) vs. 451 teachers. District/regional decision-maker buy-in insufficient for policy integration priority to succeed.",
+    "Geographic validity threat: Five regions have <35 responses each. Data from Rukwa, Reo inputs (2), Arc (5) too thin for regional analysis; risks skewed recommendations favoring high-response zones."
   ],
-  "recommendation": "Immediately prioritise targeted outreach to DEO, REO, and policy-level officials in undersampled regions (Rukwa, Singida, Songwe) to rebalance sample and test whether scale readiness gap is perception or structural. Simultaneously, use feedback themes (incentives, digital systems, policy alignment) to stress-test expansion strategy against operational readiness findings."
+  "recommendation": "Redirect 40% of remaining collection effort to underrepresented regions (Rukwa, Singida, Songwe, Shinyanga, Mtwara) and deliberately oversample district/regional officials (target: 250+ by close). Simultaneously commission rapid capacity audit against top 3 expansion priorities to reconcile 2.7 readiness score with 61% expansion demand before finalizing scaling roadmap."
 }
