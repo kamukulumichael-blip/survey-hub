@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T19:24:32.866431Z",
+  "generated_at": "2026-06-13T20:48:28.804565Z",
   "total_records": 481,
-  "headline": "Survey at 36% target with strong regional spread; teacher voice dominates data quality.",
-  "collection_status": "481 of 1,350 responses collected (35.6% completion). All 10 regions represented with balanced distribution; Lindi, Mara, and Tanga account for 42% of sample. Pace suggests on track for target if current collection rate maintained through Q2 2026.",
+  "headline": "Survey at 36% completion with strong regional spread but critical scale readiness gap.",
+  "collection_status": "481 of 1,350 responses collected (35.6% of target). All 10 regions represented with Lindi, Mara, and Tanga leading (231 responses, 48% of total). Collection pace adequate but must accelerate in remaining 7 months to meet target.",
   "key_findings": [
-    "Teacher-led feedback (260/481 = 54%): Lower KF teachers (195) are primary respondents, complemented by head teachers (115). Leadership voices (WEO, DEO, RC, REO, ARC) represent only 8% of responses—significant blind spot for district/regional implementation insights.",
-    "Expansion appetite outpaces capacity: 175 respondents (36%) prioritise expanding KF vs. only 76 (16%) calling to strengthen existing systems. Scale readiness score of 2.8/5 signals implementation risk if expansion outpaces operational consolidation.",
-    "Partner satisfaction high (4.4/5) despite readiness gap: Stakeholders are engaged and supportive, but qualitative feedback emphasises need for digital teacher tracking, regular feedback loops, and government policy integration—not currently reflected in priority rankings.",
-    "Feedback quality concern: 5 non-KF teachers and 4 unspecified 'other officials' in sample. Qualitative responses show Swahili-language challenges in data capture (partial/truncated entries), risking analysis validity."
+    "Teacher engagement strong: 260 KiuFunza teachers (54% of responses) indicates programme visibility among core users; head teachers represent 24%, showing leadership buy-in.",
+    "Expansion priority dominant: 175 respondents (36%) prioritize KiuFunza expansion; only 76 (16%) focus on strengthening existing work—signals demand outpaces capacity.",
+    "Critical readiness-satisfaction paradox: Partner satisfaction high (4.4/5) but scale readiness low (2.8/5), indicating stakeholders want growth but perceive operational constraints.",
+    "Government alignment emerging: Feedback emphasizes policy integration and sustained government collaboration; 97 responses (20%) cite policy as priority, reflecting institutional sustainability concerns."
   ],
   "flags": [
-    "District-level voice missing: Only 7 DEO + 4 district officials in 481 responses. Critical for understanding policy bottlenecks and scaling constraints—recommend targeted DEO outreach in remaining 869 responses.",
-    "Scale readiness paradox: 2.8/5 score on readiness to scale contradicts 36% expansion priority. Risk of misaligned expectations between field and leadership on implementation capacity.",
-    "Data quality drift: Truncated Swahili feedback and unspecified respondent categories suggest data collection tool or enumerator calibration issues. Validate remaining survey instrument before field completion."
+    "Scale readiness at 2.8/5 is dangerously low for expansion plans—risk of quality degradation if growth outpaces systems readiness.",
+    "District and regional officials severely under-represented (19 responses from 8 district/regional roles); strategy decisions may lack bureaucratic input needed for policy uptake.",
+    "Songwe, Rukwa, and Singida lag significantly (76 responses combined vs. 231 from top 3 regions)—geographic imbalance risks skewed findings and uneven implementation signals."
   ],
-  "recommendation": "Immediately boost DEO/district-level sampling to 15% of remaining responses (130+ officials) to close implementation insight gap. Simultaneously audit data collection protocols in lower-performing regions (Rukwa 4%, Singida 6%) to ensure quality. Conduct rapid sense-check on scale readiness drivers before Q3 planning."
+  "recommendation": "Immediately audit operational readiness across the 5 areas implicit in feedback (monitoring systems, teacher incentives, digital tracking, inter-stakeholder communication, government coordination). Launch targeted outreach to district and regional education officials in underrepresented regions to secure buy-in for scale before committing expansion resources."
 }
