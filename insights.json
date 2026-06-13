@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T16:13:16.704453Z",
-  "total_records": 464,
-  "headline": "34% target achieved; strong teacher engagement masks critical regional gaps and scale readiness concerns.",
-  "collection_status": "464 of 1,350 responses collected (34% completion). Lindi and Mara dominate with 167 combined responses (36% of total). Nine regions below 50 responses; Rukwa critically underrepresented at 17. Current pace insufficient to meet target without accelerated collection.",
+  "generated_at": "2026-06-13T17:53:03.845498Z",
+  "total_records": 479,
+  "headline": "Survey at 35% completion with strong regional spread but significant scale readiness gap.",
+  "collection_status": "479 of 1,350 responses collected (35.5% progress). All 10 regions represented with Lindi, Mara, and Tanga leading (231 responses, 48% of current total). Pace suggests completion in 8-10 weeks if current momentum maintained.",
   "key_findings": [
-    "Teacher cohort represents 79% of responses (451/464), heavily skewed toward lower primary (41% of sample). Leadership voices (heads, WEO, district officials) significantly underweighted—only 164 responses (35%).",
-    "Expansion priority dominates: 168 respondents (36%) prioritize expanding KiuFunza; 113 (24%) demand new programs. Only 73 (16%) focus on strengthening existing implementation—signals appetite exceeds capacity.",
-    "Scale readiness deeply misaligned with ambition: mean score 2.7/5 indicates stakeholders perceive moderate-to-low organizational readiness, yet 60% of priorities assume scaled delivery and policy integration.",
-    "Regional concentration risk: Lindi (19% of total) and top-4 regions account for 279/464 (60%). Shinyanga, Songwe, Singida, Rukwa collectively represent only 104 responses—insufficient for regional strategy validation."
+    "Teacher engagement strong: 323 responses (67%) from KiuFunza-trained teachers (lower + upper primary), indicating good reach within target cohort.",
+    "Expansion priority dominates: 175 stakeholders (37% of top priorities) want KiuFunza expanded; new programs (24%) and policy integration (20%) follow—signals demand exceeds current supply.",
+    "Critical readiness gap: 2.8/5 scale readiness score against 4.4/5 partner satisfaction suggests stakeholders support the initiative but lack confidence in implementation capacity.",
+    "Leadership underrepresented: Only 7 DEO, 5 ARC, 2 REO responses (14 total, 3% of survey) limits district/regional strategy insight; head teachers (115, 24%) partially compensate."
   ],
   "flags": [
-    "Scale readiness-ambition gap: Stakeholders want expansion (61% of priorities) but assess readiness at 2.7/5. Immediate diagnostic needed on capacity constraints before committing to scaling promises.",
-    "Leadership underrepresentation: Only 164 policy-facing respondents (WEO, DEO, REC, ARC, REO, district officials combined) vs. 451 teachers. District/regional decision-maker buy-in insufficient for policy integration priority to succeed.",
-    "Geographic validity threat: Five regions have <35 responses each. Data from Rukwa, Reo inputs (2), Arc (5) too thin for regional analysis; risks skewed recommendations favoring high-response zones."
+    "Scale readiness (2.8/5) significantly lags satisfaction (4.4/5)—resource, training, or systems constraints blocking execution of expansion plans.",
+    "Regional imbalance: Lindi (89), Mara (78), Tanga (64) account for 48% of responses; Rukwa (17), Songwe (29), Singida (28) undersampled—risk of skewed insights.",
+    "Government/education official engagement critically low (14/479, 3%)—survey may miss policy feasibility constraints and won't validate ministerial buy-in for scale."
   ],
-  "recommendation": "Redirect 40% of remaining collection effort to underrepresented regions (Rukwa, Singida, Songwe, Shinyanga, Mtwara) and deliberately oversample district/regional officials (target: 250+ by close). Simultaneously commission rapid capacity audit against top 3 expansion priorities to reconcile 2.7 readiness score with 61% expansion demand before finalizing scaling roadmap."
+  "recommendation": "Prioritize direct outreach to district and regional education officials (DEO, ARC, REO) in undersampled regions to close the 3% gap and validate scale readiness barriers before finalizing expansion strategy. Simultaneously investigate the 1.6-point satisfaction-readiness gap through targeted interviews with 20-30 stakeholders to isolate whether bottlenecks are funding, training, systems, or political commitment."
 }
