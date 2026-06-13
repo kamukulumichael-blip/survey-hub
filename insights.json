@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T23:59:45.306428Z",
+  "generated_at": "2026-06-13T04:43:08.021088Z",
   "total_records": 393,
-  "headline": "29% target completion with strong KF expansion demand; geographic concentration risk emerging.",
-  "collection_status": "393 of 1,350 responses (29%) collected. Lindi and Mara dominate with 134 responses (34% of total). Pace requires acceleration: at current rate, full target not achievable without intensified regional push in underperforming zones.",
+  "headline": "29% of target reached with strong KF advocate base; regional and respondent gaps emerging.",
+  "collection_status": "393 of 1,350 responses collected (29%). Lindi, Mara, and Tanga account for 45% of current sample. Six regions (Rukwa, Reo, Arc, Deo, Other officials) severely under-represented, risking regional validity. Current pace requires acceleration to meet deadline.",
   "key_findings": [
-    "KF expansion is dominant priority (139/393, 35% of sample) with new programs (92) and policy integration (83) as secondary drivers—stakeholders want scale, not consolidation.",
-    "Teacher respondents represent 85% of sample (211/393), heavily weighted toward KF lower grades (153). Head teacher engagement strong but DEO/REO/REC participation critically thin (15 combined).",
-    "Rukwa (9), Singida (25), and Songwe (29) severely underrepresented; Rukwa at 2.7% of target. Geographic skew risks biased priority data and weak district-level buy-in.",
-    "Partner satisfaction high (4.4/5) but scale readiness low (2.7/5)—stakeholders want expansion but doubt organizational/system capacity to deliver."
+    "KiuFunza teachers (153 lower + 54 upper) dominate cohort at 53%; head teachers (94, 24%) provide management perspective but frontline implementation voices limited",
+    "Expansion appetite is strong: 139 respondents prioritize expanding KF, 92 want new programs; only 8 mention research despite evidence gaps in scale readiness (2.7/5)",
+    "Partner satisfaction high (4.4/5) but scale readiness critically low (2.7/5)—indicates stakeholders like KF but doubt sustainability or systemic integration",
+    "Feedback themes converge on three demands: incentivize teachers, deepen government policy alignment, expand to new districts; digital tracking and inter-stakeholder communication flagged"
   ],
   "flags": [
-    "District and regional official engagement critically weak (15 respondents across DEO, REC, REC, REO roles). Without these gatekeepers, policy and implementation risk remains high.",
-    "Rukwa, Singida, and Songwe combined represent only 63 responses (16% of current total). Must surge collection in these three regions or risk regional validity and representation.",
-    "Low scale readiness (2.7/5) against high expansion demand signals potential disconnect between stakeholder ambitions and program readiness—risk of over-commitment."
+    "Rukwa (9), Songwe (29), Singida (25) critically under-target; risk of regional bias skewing national strategy recommendations",
+    "Scale readiness gap (2.7/5 vs 4.4/5 satisfaction) signals disconnect—stakeholders want expansion but doubt organizational capacity; unchecked could fuel over-commitment",
+    "Non-KF teacher voice absent (4 responses); external validation of KF model at risk if survey remains KF-centric"
   ],
-  "recommendation": "Immediately deploy targeted collection teams to Rukwa (priority 1), Singida, and Songwe with explicit DEO/REC quotas. Simultaneously, conduct rapid capacity assessment against expansion priorities to bridge 4.4/2.7 satisfaction-readiness gap before scaling commitments."
+  "recommendation": "Immediately deploy targeted collection push in Rukwa, Songwe, Singida, and Mtwara; simultaneously commission rapid diagnostic on scale readiness barriers (staffing, systems, funding) to reconcile satisfaction-readiness gap before expansion advocacy hardens into commitments you cannot resource."
 }
