@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-13T23:40:02.863951Z",
+  "generated_at": "2026-06-14T04:00:32.795823Z",
   "total_records": 481,
-  "headline": "Survey at 36% completion with strong regional spread but uneven respondent mix.",
-  "collection_status": "481 of 1,350 responses collected (35.6% of target). All 10 regions represented; LINDI, MARA, and TANGA account for 47% of current data. Pace suggests completion by Q2 2026 if acceleration maintained.",
+  "headline": "Survey at 36% completion; strong regional spread but significant scale-up momentum needed.",
+  "collection_status": "481 of 1,350 responses (35.6%) collected across all 10 regions, with LINDI (89), MARA (78), and TANGA (64) leading. Collection pace supports on-time delivery if momentum maintained. Geographic distribution proportional but uneven—RUKWA at only 19 responses requires targeted push.",
   "key_findings": [
-    "Teacher engagement dominates: 260 KiuFunza teachers (54% of sample) plus 115 head teachers drive feedback; senior officials (DEO, ARC, REO) severely underrepresented at 16 responses total.",
-    "Expansion appetite is clear: 175 stakeholders (36%) prioritize expanding KiuFunza; 116 want new programs. Only 9 cite research as priority—misalignment with evidence-building needs.",
-    "Scale readiness gap critical: Average readiness score 2.8/5 contradicts 36% calling for expansion—suggests optimism on demand but concern on systems capacity.",
-    "Qualitative signals focus on sustainability: Feedback emphasizes government partnership, teacher incentives, digital monitoring, and policy integration—all prerequisite to scaling beyond current 260 teachers."
+    "Teacher respondents dominate (65% of sample): 195 KF lower-primary, 115 head teachers, 65 KF upper-primary—core implementer voice is strong.",
+    "Expansion priority is clear: 175 stakeholders prioritize expanding KF (36% of priorities), vs. 76 for strengthening existing—demand signal favors growth over consolidation.",
+    "Partner satisfaction healthy (4.4/5) but scale readiness lags significantly (2.8/5)—indicates confidence in approach but concern about operationalizing expansion.",
+    "Feedback reveals three recurring themes: sustained teacher incentives, digital monitoring systems, and government policy integration for sustainability."
   ],
   "flags": [
-    "District/regional education officials (DEO, ARC, REO, REO) total only 16 responses—critical for policy buy-in and scaling authority are undersampled.",
-    "Scale readiness (2.8/5) is well below threshold for expansion; risks poor quality if growth proceeds without systems strengthening first.",
-    "RUKWA (19), SINGIDA (28), SONGWE (29) lag significantly; risk regional insights lost if these don't reach ~100+ responses each."
+    "Scale readiness gap (2.8/5) suggests infrastructure, staffing, or systems constraints not yet visible in satisfaction scores—validate capacity assumptions before acceleration.",
+    "Low representation of regional/district education officials (REO, ARC, DEO, REO = 16 responses, 3.3%)—critical for policy buy-in; increase senior government sampling.",
+    "Research priority ranked lowest (9 responses, 1.9%)—risk of evidence gaps if expansion outpaces learning; embed M&E requirement in growth plans."
   ],
-  "recommendation": "Urgently redirect collection toward district and regional officials (target: 80+ responses) to validate policy feasibility before promoting expansion narrative. Simultaneously investigate scale readiness barriers (likely training, monitoring capacity, incentives) to avoid scaling into capacity failure."
+  "recommendation": "Immediately audit scale readiness barriers (staffing, systems, partner capacity) against the 175-stakeholder expansion demand. Simultaneously intensify sampling of government education officials (target 50+ more responses) to ensure policy alignment before proposing institutional integration to government."
 }
